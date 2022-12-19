@@ -1,10 +1,15 @@
-/* Déclaration des polices de caractère */
+/* ============================================= */
+/* ==== Déclaration des polices de caractère === */
+/* ============================================= */
+
 @font-face {
   font-family: "HindSiliguri";
   src: url("../fonts/HindSiliguri-Regular.ttf");
 }
 
-/* Desactiver les styles par défaut */
+/* ======================================== */
+/* === Desactiver les styles par défaut === */
+/* ======================================== */
 
 body {
     margin: 0;
@@ -15,29 +20,39 @@ a {
     color: inherit; /* on dit que la couleur du texte doit être la même que le parent */
 }
 
-/* Les styles globaux */
+/* ========================== */
+/* === Les styles globaux === */
+/* ========================== */
 
 body {
     font-family: 'HindSiliguri', Arial;
 }
 
 
-
-/* Background image */
+/* ======================== */
+/* === Background image === */
+/* ======================== */
 
 .background {
-    height: 100vh; /* vh = view height = la hauteur de la fenetre du navigateur */ 
-    background-image: url(../images/groupe1.jpg);
+    height: 100vh; /* vh = view height = la hauteur de la fenetre du navigateur */
+
+    background-color: #000000;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+        url("../images/groupe1.jpg"); /* https://codepen.io/cferdinandi/pen/VwaOLrG */
+    
     background-size: cover;
     background-position: center;
-
-    text-align: center; /* Pour centrer les enfants */
 }
 
-/* Home screen */
+/* =================== */
+/* === Home screen === */
+/* =================== */
 
 .logo {
+    display: block;
     height: 180px;
+    margin: 0 auto; /* pour centrer le logo */
 }
 
 .buttons-container {
@@ -64,9 +79,7 @@ body {
     width: 150px;
 }
 
-/* Ajouter du style uniquement au survol d'un élément */
-/* hover = survol avec la souris */
-.button:hover {
+.button:hover { /* Ajouter du style uniquement au survol d'un élément */
     color: #6C0505;
     background-color: #FFDB5A;
 }

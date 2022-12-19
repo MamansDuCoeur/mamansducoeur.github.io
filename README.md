@@ -25,7 +25,7 @@
 
 Dans la balise head du HTML :
 
-<link rel="stylesheet" href="assets/css/style.css">
+`<link rel="stylesheet" href="assets/css/style.css">`
 
 
 ## CSS 
@@ -50,15 +50,10 @@ Selecteur spécifique :
 - `width` : largeur de la boite
 
 
-## Unités des tailles
-
-...
-...
-...
-
-
-
-
 ## Documentation 
 
-MDN : Mozzila 
+MDN : Pour le HTML, CSS et JS. Une des meilleures ! 
+
+## Git
+
+![](docs/github.png)

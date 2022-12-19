@@ -1,11 +1,31 @@
+/* Desactiver les styles par défaut */
+
 body {
     margin: 0;
 }
+
+/* Background image */
 
 .background {
     height: 100vh; /* vh = view height = la hauteur de la fenetre du navigateur */ 
     background-image: url(../images/groupe1.jpg);
     background-size: cover;
     background-position: center;
+
+    text-align: center; /* Pour centrer les enfants */
 }
 
+/* Home screen */
+
+.logo {
+    height: 180px;
+}
+
+.button {
+    font-size: 18px;
+    padding: 7px 20px;
+    border-radius: 4em;
+    border: solid white 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }

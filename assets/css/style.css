@@ -1,8 +1,27 @@
+/* Déclaration des polices de caractère */
+@font-face {
+  font-family: "HindSiliguri";
+  src: url("../fonts/HindSiliguri-Regular.ttf");
+}
+
 /* Desactiver les styles par défaut */
 
 body {
     margin: 0;
 }
+
+a {
+    text-decoration: none; /* on enlève le soulignement par défaut du text */
+    color: inherit; /* on dit que la couleur du texte doit être la même que le parent */
+}
+
+/* Les styles globaux */
+
+body {
+    font-family: 'HindSiliguri', Arial;
+}
+
+
 
 /* Background image */
 
@@ -50,4 +69,25 @@ body {
 .button:hover {
     color: #6C0505;
     background-color: #FFDB5A;
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 20% 20px 20%;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    gap: 10px;
+
+    color: white;
+    font-size: 18px;
+}
+
+.social-link i {
+    color: white;
+    font-size: 30px;
 }

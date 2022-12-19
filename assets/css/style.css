@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+
+.background {
+    height: 100vh; /* vh = view height = la hauteur de la fenetre du navigateur */ 
+    background-image: url(../images/groupe1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+

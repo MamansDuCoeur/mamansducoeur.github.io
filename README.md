@@ -26,17 +26,17 @@ Dans la balise head du HTML :
 
 ## CSS 
 
-`background-image` : pour l'url d'une image
-`background-size` : pour le placement de l'image de fond
-`background-position` : pour le placement de l'image de fond
+- `background-image` : pour l'url d'une image
+- `background-size` : pour le placement de l'image de fond
+- `background-position` : pour le placement de l'image de fond
 
 
 ## Box model
 
 ![](docs/box-model.png)
 
-`height` : hauteur
-`width` : largeur de la boite
+- `height` : hauteur
+- `width` : largeur de la boite
 
 
 ## Unités des tailles

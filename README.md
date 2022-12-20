@@ -57,3 +57,19 @@ MDN : Pour le HTML, CSS et JS. Une des meilleures !
 ## Git
 
 ![](docs/github.png)
+
+## Raccourci 
+
+`CTLR + SHIFT + :` ==> créer des commentaires dans VSCode
+
+
+## Commandes terminales
+
+Quand on ouvre un terminal, on est par défaut dans un DOSSIER
+
+- `pwd` : print working direction (voir le dossier courant)
+- `ls` (mac) / `dir` (window): lister les fichiers et dossier dans le dossier courant
+
+## Fonction
+
+Une suite regroupée d'instructions. 

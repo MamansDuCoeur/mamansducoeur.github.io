@@ -36,9 +36,8 @@ body {
 .background {
     height: 100vh; /* vh = view height = la hauteur de la fenetre du navigateur */
 
-    background-color: #000000;
     background-image: 
-        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), /* overlay : couche transparente noire au dessus de l'image */
         url("../images/groupe1.jpg"); /* https://codepen.io/cferdinandi/pen/VwaOLrG */
     
     background-size: cover;

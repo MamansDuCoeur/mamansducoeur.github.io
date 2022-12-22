@@ -48,6 +48,13 @@ body {
 /* === Home screen === */
 /* =================== */
 
+#home {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .logo {
     display: block;
     height: 180px;
@@ -95,11 +102,24 @@ body {
     display: flex;
     gap: 10px;
 
-    color: white;
     font-size: 18px;
 }
 
 .social-link i {
-    color: white;
     font-size: 30px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.slider-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.slider-buttons i {
+    cursor: pointer;
 }

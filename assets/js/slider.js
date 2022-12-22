@@ -27,4 +27,23 @@ function changeBackgroundImage() {
     }
 }
 
-setInterval(changeBackgroundImage, 3 * 1000); // Toutes les 10 secondes, on change l'image de fond (1000 milliseconds = 10 secondes).
+setInterval(changeBackgroundImage, 10 * 1000); // Toutes les 10 secondes, on change l'image de fond (1000 milliseconds = 10 secondes).
+
+// On va selectionner TOUS les boutons !!
+const buttons = document.querySelectorAll(".slider-buttons i");
+console.log(buttons);
+
+// Pour chacun des boutons, je vais écouter les click !!
+
+buttons.forEach((button, index) => {
+    // Le premier bouton a l'index 0
+    // le deuxieme bouton a l'index 1
+    // etc....
+
+    // On écoute le click sur le bouton ! 
+    button.addEventListener("click", () => {
+        // Change la next image 
+        nextImage = index + 1;
+        changeBackgroundImage();
+    });
+});

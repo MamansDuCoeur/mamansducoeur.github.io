@@ -11,9 +11,9 @@
 /* === Desactiver les styles par défaut === */
 /* ======================================== */
 
-body {
+body, p, ul, li, h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    position: relative;
+    padding: 0;
 }
 
 a {
@@ -23,9 +23,8 @@ a {
 
 ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
+
 
 /* ========================== */
 /* === Les styles globaux === */
@@ -36,27 +35,21 @@ body {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
-/* ======================== */
-/* === Background image === */
-/* ======================== */
-
-.background {
-    height: 100vh; /* vh = view height = la hauteur de la fenetre du navigateur */
-
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), /* overlay : couche transparente noire au dessus de l'image */
-        url("../images/groupe1.jpg"); /* https://codepen.io/cferdinandi/pen/VwaOLrG */
-    
-    background-size: cover;
-    background-position: center;
+h1 {
+    text-align: center;
+    font-size: 30px;
 }
 
-/* =================== */
-/* === Home screen === */
-/* =================== */
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==================== */
+/* === Home section === */
+/* ==================== */
 
 #home {
     color: white;
@@ -65,13 +58,21 @@ section {
     justify-content: space-between;
 }
 
-.logo {
+#home.background {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), /* overlay : couche transparente noire au dessus de l'image */
+        url("../images/groupes/groupe1.jpg"); /* https://codepen.io/cferdinandi/pen/VwaOLrG */
+    background-size: cover;
+    background-position: center;
+}
+
+#home .logo {
     display: block;
     height: 180px;
     margin: 0 auto; /* pour centrer le logo */
 }
 
-.buttons-container {
+#home .buttons-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -79,7 +80,7 @@ section {
     margin: 0 10%;
 }
 
-.button {
+#home .button {
     font-size: 18px;
     text-align: center;
 
@@ -97,12 +98,12 @@ section {
     width: 150px;
 }
 
-.button:hover { /* Ajouter du style uniquement au survol d'un élément */
+#home .button:hover { /* Ajouter du style uniquement au survol d'un élément */
     color: #6C0505;
     background-color: #FFDB5A;
 }
 
-.social-links-container {
+#home .social-links-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -110,35 +111,42 @@ section {
     gap: 20px;
 }
 
-.social-link {
+#home .social-link {
     display: flex;
     gap: 10px;
 
     font-size: 18px;
 }
 
-.social-link i {
+#home .social-link i {
     font-size: 30px;
 }
 
-h1, p {
-    text-align: center;
-    padding: 0 20px;
+#home h1 {
+    margin-top: 100px;
+    font-size: 50px;
 }
 
-.slider-buttons {
+#home p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+#home .slider-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
     padding-bottom: 20px;
 }
 
-.slider-buttons i {
+#home .slider-buttons i {
     cursor: pointer;
 }
 
-
+/* ======================== */
 /* ======= LA NAVBAR ====== */
+/* ======================== */
 
 nav {
     display: flex;
@@ -163,33 +171,30 @@ nav ul {
     gap: 20px;
 }
 
-/* ==== SECTION PARTENAIRE === */
-
-#partenaires, #actions {
-    padding-top: 100px;
-    padding-right: 70px;
-    padding-left: 70px;
-    box-sizing: border-box;
-}
+/* ============================ */
+/* ==== SECTION PARTENAIRES === */
+/* ============================ */
 
 #partenaires {
+    padding: 150px 50px 0 70px;
+    box-sizing: border-box;
     background: linear-gradient(to right, #ffdb5a, #fff0d4);
+}
+
+#partenaires h1 {
+    margin-bottom: 50px;
 }
 
 #partenaires img {
     max-height: 250px;
     max-width: 250px;
-    margin-bottom: 100px;
-}
-
-#partenaires h2 {
-    font-size: 16px;
+    margin-bottom: 50px;
 }
 
 #partenaires .box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 70px;
 }

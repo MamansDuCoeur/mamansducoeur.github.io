@@ -12,6 +12,14 @@
 
 `<a>` : pour les liens
 
+`<h1>` : pour les titres
+
+`<section>` : pour les sections de notre
+
+`<ul>` : les liste de choses
+
+`<li>` : chaque élement d'un liste
+
 
 ## Attributs des balises HTML
 

@@ -13,11 +13,18 @@
 
 body {
     margin: 0;
+    position: relative;
 }
 
 a {
     text-decoration: none; /* on enlève le soulignement par défaut du text */
     color: inherit; /* on dit que la couleur du texte doit être la même que le parent */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* ========================== */
@@ -28,6 +35,9 @@ body {
     font-family: 'HindSiliguri', Arial;
 }
 
+section {
+    height: 100vh;
+}
 
 /* ======================== */
 /* === Background image === */
@@ -71,6 +81,8 @@ body {
 
 .button {
     font-size: 18px;
+    text-align: center;
+
     padding: 7px 20px;
     border-radius: 4em;
     border: solid white 2px;
@@ -111,6 +123,7 @@ body {
 
 h1, p {
     text-align: center;
+    padding: 0 20px;
 }
 
 .slider-buttons {
@@ -122,4 +135,61 @@ h1, p {
 
 .slider-buttons i {
     cursor: pointer;
+}
+
+
+/* ======= LA NAVBAR ====== */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    backdrop-filter: blur(10px);
+
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+/* ==== SECTION PARTENAIRE === */
+
+#partenaires, #actions {
+    padding-top: 100px;
+    padding-right: 70px;
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+
+#partenaires {
+    background: linear-gradient(to right, #ffdb5a, #fff0d4);
+}
+
+#partenaires img {
+    max-height: 250px;
+    max-width: 250px;
+    margin-bottom: 100px;
+}
+
+#partenaires h2 {
+    font-size: 16px;
+}
+
+#partenaires .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
 }

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="background" id="home">
+    <section id="home" class="background">
 
         <div>
             <img src="assets/logos/logo-mamans.png" alt="Logo Mamans du Coeur" class="logo">
@@ -35,10 +35,10 @@
             </div>
     
             <div class="buttons-container">
-                <button class="button">Nos actions</button>
-                <button class="button">Faire un don</button>
-                <button class="button">Partenaires</button>
-                <button class="button">Contact</button>
+                <a href="#actions" class="button">Nos actions</a>
+                <a href="#" class="button">Faire un don</a>
+                <a href="#partenaires" class="button">Partenaires</a>
+                <a href="#" class="button">Contact</a>
             </div>
     
             <h1>Les Mamans du Coeur</h1>
@@ -55,10 +55,52 @@
             <i class="fa-regular fa-circle"></i>
             <i class="fa-regular fa-circle"></i>
         </div>
-    </div>
+    </section>
+
+    <nav>
+        <a href="#home">
+            <img src="assets/logos/logo-mamans.png" alt="Logo Mamans du Coeur">
+        </a>
+        <ul>
+            <li><a href="#">Agir</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="actions">
+        <p>Page de "nos actions" en cours de construction...</p>
+    </section>
+
+    <section id="partenaires">
+        
+        <h1>Nos partenaires</h1>
+
+        <div class="box">
+            <a target="_blank" href="https://www.fondation-abbe-pierre.fr/">
+                <img src="assets/images/partenaires/fap.png" alt="Fondation Abbé Pierre">
+            </a>
+            
+            <a target="_blank" href="https://association-elancoeur.org/">
+                <img src="assets/images/partenaires/elancoeur.png" alt="Elan coeur">
+            </a>
+            
+            <a target="_blank" href="https://fodolfrance.com/">
+                <img src="assets/images/partenaires/fodol.png" alt="Fodol France">
+            </a>
+            
+            <a target="_blank" href="https://fr.iofc.org/fr">
+                <img src="assets/images/partenaires/initiative.png" alt="Initiatives et changement">
+            </a>
+            
+            <a target="_blank" href="https://www.qassama.org/">
+                <img src="assets/images/partenaires/qassama.png" alt="Qassama">
+            </a>
+        </div>
+
+    </section>
 
     <script src="assets/js/slider.js"></script>
-
 </body>
 
 </html>

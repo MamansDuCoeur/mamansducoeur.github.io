@@ -31,10 +31,8 @@ setInterval(changeBackgroundImage, 10 * 1000); // Toutes les 10 secondes, on cha
 
 // On va selectionner TOUS les boutons !!
 const buttons = document.querySelectorAll(".slider-buttons i");
-console.log(buttons);
 
 // Pour chacun des boutons, je vais écouter les click !!
-
 buttons.forEach((button, index) => {
     // Le premier bouton a l'index 0
     // le deuxieme bouton a l'index 1

@@ -3,22 +3,33 @@
 /* ============================================= */
 
 @font-face {
-  font-family: "HindSiliguri";
-  src: url("../fonts/HindSiliguri-Regular.ttf");
+    font-family: "HindSiliguri";
+    src: url("../fonts/HindSiliguri-Regular.ttf");
 }
 
 /* ======================================== */
 /* === Desactiver les styles par défaut === */
 /* ======================================== */
 
-body, p, ul, li, h1, h2, h3, h4, h5, h6 {
+body,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
 
 a {
-    text-decoration: none; /* on enlève le soulignement par défaut du text */
-    color: inherit; /* on dit que la couleur du texte doit être la même que le parent */
+    text-decoration: none;
+    /* on enlève le soulignement par défaut du text */
+    color: inherit;
+    /* on dit que la couleur du texte doit être la même que le parent */
 }
 
 ul {
@@ -59,9 +70,11 @@ a:hover {
 }
 
 #home.background {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), /* overlay : couche transparente noire au dessus de l'image */
-        url("../images/groupes/groupe1.jpg"); /* https://codepen.io/cferdinandi/pen/VwaOLrG */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+        /* overlay : couche transparente noire au dessus de l'image */
+        url("../images/groupes/groupe1.jpg");
+    /* https://codepen.io/cferdinandi/pen/VwaOLrG */
     background-size: cover;
     background-position: center;
 }
@@ -69,7 +82,8 @@ a:hover {
 #home .logo {
     display: block;
     height: 180px;
-    margin: 0 auto; /* pour centrer le logo */
+    margin: 0 auto;
+    /* pour centrer le logo */
 }
 
 #home .buttons-container {
@@ -98,7 +112,8 @@ a:hover {
     width: 150px;
 }
 
-#home .button:hover { /* Ajouter du style uniquement au survol d'un élément */
+#home .button:hover {
+    /* Ajouter du style uniquement au survol d'un élément */
     color: #6C0505;
     background-color: #FFDB5A;
 }
@@ -159,6 +174,8 @@ nav {
 
     position: sticky;
     top: 0;
+
+    z-index: 9;
 }
 
 nav img {
@@ -197,4 +214,69 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     gap: 70px;
+}
+
+
+/** ========================================
+*       La section Nos action
+================================================*/
+
+
+.action-description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+.action {
+    /*
+      margin peut prendre un deux ou 4 valeurs
+  
+      Si il n'y en a qu'une : on applique la marge sur les 4 côté
+      Si il y en a deux : la première valeur est appliquée en haut et en bas tandis que la seconde est appliquée a guache et a droite
+      Si il y en a 4 les valeurs sont appliquées sur chacun des côté :  haut droite bas gauche
+  
+    */
+
+    /*
+     1vh représente une unité de viewport sur la hauteur (viewport Height)
+     1vw représente une unité de viewport sur la largeur (viewport width)
+    
+     lorsque vous utilisez viewport 
+     1vh fera 1% de la hauteur
+     1vw fera 1% de la largeur de l'écran
+     */
+    margin: 1vh auto;
+    width: 20vw;
+}
+
+.masque{
+    width: 20vw;
+    /* ON utilise aussi vw pour la hauteur afin que les deux valeur soient égales et qu'on obtienne une forme carré
+    */
+    height: 20vw;
+    background-size: cover;
+    background-position: center;
+}
+
+#action-1{
+    background-image: url("../images/actions/action-1.jpg");
+}
+
+#action-2{
+    background-image: url("../images/actions/action-2.jpg");
+}
+
+#action-3{
+    background-image: url("../images/actions/action-3.jpg");
+}
+
+/** On va ajouter des règle css pour les écran faisant moin de 500px de large*/
+/* Si l'écran mesure au maximum 576px alors  : */
+@media (max-width: 576px) {
+
+    /** notre action prend 752% de la largeur et donc s'empile sur les autres**/
+    .action {
+        width: 75vw;
+    }
 }

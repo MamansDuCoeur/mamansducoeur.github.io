@@ -47,7 +47,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 150px 50px 0 70px;
+    padding: 150px 50px 0 90px;
     box-sizing: border-box;
 }
 
@@ -63,6 +63,10 @@ a:hover {
 
 .yellow-bg{
     background: linear-gradient(to right, #ffdb5a, #fff0d4);
+}
+
+.hide{
+    display: none;
 }
 
 /* ==================== */
@@ -164,6 +168,14 @@ a:hover {
 
 #home .slider-buttons i {
     cursor: pointer;
+}
+
+#home .submenu{
+    margin: 3vh 0 0 20vw;
+}
+
+#home .submenu a{
+    margin: 1vh 2vw;
 }
 
 /* ======================== */
@@ -291,6 +303,10 @@ nav ul {
 #action-3{
     background-image: url("../images/actions/action-3.jpg");
 }
+
+/* ====================================================
+*  Section medias
+=================================================*/
 
 .action-youtube{
     text-align: center;

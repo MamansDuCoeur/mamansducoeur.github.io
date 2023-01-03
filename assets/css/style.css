@@ -52,6 +52,7 @@ section {
 h1 {
     text-align: center;
     font-size: 30px;
+    margin: 6vh 0;
 }
 
 a:hover {
@@ -276,6 +277,31 @@ nav ul {
     background-image: url("../images/actions/action-3.jpg");
 }
 
+.action-youtube{
+    text-align: center;
+    padding: 5vh 5vw;
+    font-size: 16px;
+}
+
+.article-item{
+    padding: 0.5vh 0;
+}
+
+.article-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.article-logo > img{
+    width: 20vw;
+    height: auto;
+}
+
+/**=====================================================
+
+GESTION DU RESPONSIVE
+
+*=======================================*/
 /** On va ajouter des règle css pour les écran faisant moin de 500px de large*/
 /* Si l'écran mesure au maximum 576px alors  : */
 @media (max-width: 576px) {
@@ -283,5 +309,12 @@ nav ul {
     /** notre action prend 752% de la largeur et donc s'empile sur les autres**/
     .action {
         width: 75vw;
+    }
+
+    .masque {
+       min-width: 75vw;
+       min-height: 75vw;
+       width: 75vw;
+       height: 75vw;
     }
 }

@@ -47,16 +47,22 @@ body {
 
 section {
     min-height: 100vh;
+    padding: 150px 50px 0 70px;
+    box-sizing: border-box;
 }
 
 h1 {
     text-align: center;
     font-size: 30px;
-    margin: 6vh 0;
+    margin-bottom: 6vh;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.yellow-bg{
+    background: linear-gradient(to right, #ffdb5a, #fff0d4);
 }
 
 /* ==================== */
@@ -189,15 +195,11 @@ nav ul {
     gap: 20px;
 }
 
+
+
 /* ============================ */
 /* ==== SECTION PARTENAIRES === */
 /* ============================ */
-
-#partenaires {
-    padding: 150px 50px 0 70px;
-    box-sizing: border-box;
-    background: linear-gradient(to right, #ffdb5a, #fff0d4);
-}
 
 #partenaires h1 {
     margin-bottom: 50px;
@@ -230,8 +232,8 @@ nav ul {
 
 .action-description {
     text-align: center;
-    font-size: 16px;
-    line-height: 1.5rem;
+    font-size: 22px;
+    line-height: 1.7rem;
 }
 
 .action {
@@ -254,6 +256,19 @@ nav ul {
      */
     margin: 1vh auto;
     width: 20vw;
+
+    /* RGB est une fonction qui permet de séléctionner une couleur en fonction d'une addition de niveau entre le rouge le vert et le bleu
+    ON peut rajouter a qui correspond à ALpha qui fait écho à la transparence
+        chaque valeurs évolue entre 0 et 255 
+        0 + sombre
+        255 + clair
+
+        pour la transparence 
+        0 - total transparence 
+        255 - pas de transparence
+    */ 
+    background-color: rgba(0,0,0,0);
+    border: none;
 }
 
 .masque{
@@ -280,11 +295,13 @@ nav ul {
 .action-youtube{
     text-align: center;
     padding: 5vh 5vw;
-    font-size: 16px;
+    font-size: 22px;
+    line-height: 1.7rem;
 }
 
 .article-item{
     padding: 0.5vh 0;
+    font-size: 22px;
 }
 
 .article-logo{

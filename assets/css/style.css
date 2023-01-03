@@ -69,6 +69,30 @@ a:hover {
     display: none;
 }
 
+.button {
+    font-size: 18px;
+    text-align: center;
+
+    padding: 7px 20px;
+    border-radius: 4em;
+    border: solid white 2px;
+    cursor: pointer;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+
+    width: 150px;
+}
+
+.button:hover {
+    /* Ajouter du style uniquement au survol d'un élément */
+    color: #6C0505;
+    background-color: #FFDB5A;
+}
+
 /* ==================== */
 /* === Home section === */
 /* ==================== */
@@ -105,29 +129,7 @@ a:hover {
     margin: 0 10%;
 }
 
-#home .button {
-    font-size: 18px;
-    text-align: center;
 
-    padding: 7px 20px;
-    border-radius: 4em;
-    border: solid white 2px;
-    cursor: pointer;
-
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    transition: color 0.3s;
-    transition: background-color 0.3s;
-
-    width: 150px;
-}
-
-#home .button:hover {
-    /* Ajouter du style uniquement au survol d'un élément */
-    color: #6C0505;
-    background-color: #FFDB5A;
-}
 
 #home .social-links-container {
     display: flex;
@@ -176,6 +178,9 @@ a:hover {
 
 #home .submenu a{
     margin: 1vh 2vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: black;
+    color: black;~
 }
 
 /* ======================== */
@@ -201,12 +206,21 @@ nav img {
     width: 100px;
 }
 
-nav ul {
+.menu {
     display: flex;
     margin-right: 20px;
     gap: 20px;
 }
 
+.menu-socials{
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-socials a{
+    padding-left: 20px;
+}
 
 
 /* ============================ */

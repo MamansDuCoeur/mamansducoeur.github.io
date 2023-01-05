@@ -84,7 +84,7 @@ a:hover {
     transition: color 0.3s;
     transition: background-color 0.3s;
 
-    width: 150px;
+    width: 200px;
 }
 
 .button:hover {
@@ -173,15 +173,35 @@ a:hover {
 }
 
 #home .submenu{
-    margin: 3vh 0 0 20vw;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    margin: 0 0 0 17vw;
+    width: 12vw;
+    padding: .7vh 0;
+
 }
 
+
+
 #home .submenu a{
+    display: block;
     margin: 1vh 2vw;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-color: black;
-    color: black;~
+    color: white;
+    transition: .2s ease-out;
+    padding: 7px 8px;
 }
+
+#home .submenu a:hover{
+    border-radius: 4em;
+    color: #6C0505;
+    background-color: #FFDB5A;
+}
+
+
 
 /* ======================== */
 /* ======= LA NAVBAR ====== */
@@ -221,6 +241,8 @@ nav img {
 .menu-socials a{
     padding-left: 20px;
 }
+
+
 
 
 /* ============================ */

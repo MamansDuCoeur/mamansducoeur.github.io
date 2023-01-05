@@ -57,6 +57,12 @@ h1 {
     margin-bottom: 6vh;
 }
 
+h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 6vh;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -393,4 +399,15 @@ GESTION DU RESPONSIVE
        width: 75vw;
        height: 75vw;
     }
+}
+
+/*====================================================
+*   Section contact
+*=====================================================*/
+
+#openstreetmap{
+    width: 40vw;
+    height: 40vh;
+    margin: auto auto;
+    z-index: 1;
 }

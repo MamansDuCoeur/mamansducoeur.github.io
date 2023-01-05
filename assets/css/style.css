@@ -61,6 +61,13 @@ a:hover {
     text-decoration: underline;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2vh;
+}
+
 .yellow-bg{
     background: linear-gradient(to right, #ffdb5a, #fff0d4);
 }

@@ -236,10 +236,20 @@
     <section id="contact">
         <h1>Contact</h1>
 
+        <!-- ON simule l'intégration du formulaire SendinBLue-->
         <form>
-            <p>Je souhaites m'inscrire à la Newsletter des mamans du coeur :</p>
-            <input type="email" id="newsletter-email" name="newsletter-email"/>
-            <a href="#" class="button">S'inscrire</a>
+            <label for="newsletter-lastname" class="hide">Votre nom :</label>
+            <input type="text" id="newsletter-lastname" name="newsletter-lastname" placeholder="Votre nom"/>
+            <label for="newsletter-firstname" class="hide">Votre prénom :</label>
+            <input type="text" id="newsletter-firstname" name="newsletter-lastname" placeholder="Votre prénom"/>
+            <label for="newsletter-email" class="hide">Votre e-mail :</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Votre E-mail"/>
+            <div>
+                <input type="checkbox" id="newsletter-validate" name="newsletter-validate"/>
+                <label for="newsletter-validate">Je souhaites m'inscrire à la Newsletter des mamans du coeur</label>
+            </div>
+
+            <input class="button" type="submit" value="S'inscrire"/>
         </form>
     </section>
     <section id="partenaires" class="yellow-bg">

@@ -333,25 +333,21 @@ nav img {
 }
 
 .masque{
-    width: 20vw;
-    /* ON utilise aussi vw pour la hauteur afin que les deux valeur soient égales et qu'on obtienne une forme carré
-    */
+    min-height: 20vw;
+    min-width: 20vw;
+    overflow: hidden;
+}
+
+.masque img{
+    
     height: 20vw;
-    background-size: cover;
-    background-position: center;
+    width: auto;
+    margin-left: -70px;
+
 }
 
-#action-1{
-    background-image: url("../images/actions/action-1.jpg");
-}
 
-#action-2{
-    background-image: url("../images/actions/action-2.jpg");
-}
 
-#action-3{
-    background-image: url("../images/actions/action-3.jpg");
-}
 
 /* ====================================================
 *  Section medias
@@ -379,6 +375,11 @@ nav img {
     height: auto;
 }
 
+.media-yt-embed{
+    width: 30vw;
+    height: 40vh;
+}
+
 /**=====================================================
 
 GESTION DU RESPONSIVE
@@ -399,6 +400,27 @@ GESTION DU RESPONSIVE
        width: 75vw;
        height: 75vw;
     }
+
+    .masque img{
+        width: 75vw;
+        height: 75vw;
+        margin: 0 auto;
+    }
+
+    .media-yt-embed{
+        width: 75vw;
+        margin-bottom: 4vh;
+    }
+
+    .article-logo{
+        width: 75vw;
+        margin: 2vh auto;
+    }
+
+    .articles{
+        margin: 2vh auto;
+    }
+
 }
 
 /*====================================================

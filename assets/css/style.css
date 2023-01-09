@@ -67,6 +67,11 @@ a:hover {
     text-decoration: underline;
 }
 
+/*Essai pour supprimer le surlignage des icônes de Font Awesome*/
+a i[class^="fa-"]:hover, a i[class*=" fa-"]:hover {
+    text-decoration: none;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -287,7 +292,7 @@ nav img {
 
 
 /** ========================================
-*       La section Nos action
+*       La section Nos actions
 ================================================*/
 
 
@@ -371,7 +376,7 @@ nav img {
 }
 
 .article-logo > img{
-    width: 20vw;
+    width: 100%;
     height: auto;
 }
 

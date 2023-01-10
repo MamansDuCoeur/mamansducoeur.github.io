@@ -51,16 +51,27 @@ section {
     box-sizing: border-box;
 }
 
+footer {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 6vh;
+    font-size: 4rem;
+    margin-bottom: 4rem;
 }
 
 h2 {
     text-align: center;
-    font-size: 26px;
-    margin-bottom: 6vh;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 a:hover {
@@ -92,7 +103,7 @@ form{
     text-align: center;
 
     padding: 7px 20px;
-    border-radius: 4em;
+    border-radius: 1em;
     border: solid white 2px;
     cursor: pointer;
 
@@ -102,13 +113,15 @@ form{
     transition: color 0.3s;
     transition: background-color 0.3s;
 
-    width: 200px;
+    width: 180px;
 }
 
 .button:hover {
     /* Ajouter du style uniquement au survol d'un élément */
     color: #6C0505;
     background-color: #FFDB5A;
+    border-color: #FFDB5A;
+    text-decoration: none;
 }
 
 /* ==================== */
@@ -170,7 +183,6 @@ form{
 
 #home h1 {
     margin-top: 100px;
-    font-size: 50px;
 }
 
 #home p {
@@ -194,11 +206,12 @@ form{
     border-bottom-left-radius: 1.5em;
     border-bottom-right-radius: 1.5em;
     border-top-right-radius: 1.5em;
+    border-top-left-radius: 1.5em;
 
     position: absolute;
     background-color: rgba(0, 0, 0, .5);
-    margin: 0 0 0 17vw;
-    width: 12vw;
+    margin: 0 0 0 14vw;
+    width: 11vw;
     padding: .7vh 0;
 
 }
@@ -207,16 +220,17 @@ form{
 
 #home .submenu a{
     display: block;
-    margin: 1vh 2vw;
+    margin: 1vh 0vw;
     color: white;
     transition: .2s ease-out;
-    padding: 7px 8px;
+    padding: 7px 21px;
 }
 
 #home .submenu a:hover{
-    border-radius: 4em;
+    border-radius: 1em;
     color: #6C0505;
     background-color: #FFDB5A;
+    text-decoration: none;
 }
 
 
@@ -360,7 +374,7 @@ nav img {
 
 .action-youtube{
     text-align: center;
-    padding: 5vh 5vw;
+    padding: 0 5vw;
     font-size: 22px;
     line-height: 1.7rem;
 }

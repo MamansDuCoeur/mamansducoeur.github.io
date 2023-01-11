@@ -170,6 +170,11 @@ form{
     gap: 20px;
 }
 
+#home .social-links-container a i:before {
+    text-decoration: none;
+    display: inline-block;
+}
+
 #home .social-link {
     display: flex;
     gap: 10px;

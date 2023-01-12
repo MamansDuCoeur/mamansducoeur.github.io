@@ -132,3 +132,8 @@ Dans notre cas, on a déjà fait l'intégration pour écran d'ordinateur.
 - réduire la taille des caractères et agrandir les zones d'affichage de texte.
 
 :two: On fait la déclinaison pour tablette puis pour mobile.
+
+
+## Avenant pour mettre en forme la partie "article de blog"
+
+![wireframe de la partie trappyblog](./docs/refonte-article-blog.png)

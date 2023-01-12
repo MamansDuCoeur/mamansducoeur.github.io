@@ -112,3 +112,23 @@ Le SEO est un ensemble de techniques qui va permettre à un site d'être référ
 - niveau de titre : h2, h3
 
 - [MDN - HTML sémantique](https://developer.mozilla.org/fr/docs/Glossary/Semantics)
+
+## Responsive Web Design
+
+On peut le mettre en place à partir d'une intégration pour écran d'ordinateur (écran large), ou le mettre à partir d'une intégration pour écran mobile (écran réduit).
+
+Dans notre cas, on a déjà fait l'intégration pour écran d'ordinateur.
+
+:one: __On fixe bien l'intégration pour écran large__
+
+- mettre les marges et les tailles de blocs avec des unités relatives (%, ou rem)
+- mettre les images en `max-width:100%`, c'est le conteneur de l'image qu'on va contraindre en taille (avec des unités relatives : %)
+- veiller à ce que les `font-size` (hauteur de caractères) soient définies en `rem`
+
+> 1 rem équivaut à 16 pixels dans le cas d'un navigateur où on a pas changé les tailles de caractères.
+> si l'utilisateur a besoin d'une taille de caractères plus haute (par exemple au minimum 24pixels), alors 1rem équivaudra à 24px.
+
+- corriger les problèmes de centrages
+- réduire la taille des caractères et agrandir les zones d'affichage de texte.
+
+:two: On fait la déclinaison pour tablette puis pour mobile.

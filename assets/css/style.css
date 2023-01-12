@@ -314,9 +314,24 @@ nav img {
 
 .actions-list {
     display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.actions-card__img {
+    width: 100%;
+    height: 50%;
+}
+
+.actions-card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
 }
 
 .action-description {
+    padding-top: 1rem;
     text-align: center;
 }
 
@@ -338,8 +353,7 @@ nav img {
      1vh fera 1% de la hauteur
      1vw fera 1% de la largeur de l'écran
      */
-    margin: 1vh auto;
-    width: 20vw;
+    width: 30%;
 
     /* RGB est une fonction qui permet de séléctionner une couleur en fonction d'une addition de niveau entre le rouge le vert et le bleu
     ON peut rajouter a qui correspond à ALpha qui fait écho à la transparence

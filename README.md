@@ -136,4 +136,10 @@ Dans notre cas, on a déjà fait l'intégration pour écran d'ordinateur.
 
 ## Avenant pour mettre en forme la partie "article de blog"
 
-![wireframe de la partie trappyblog](./docs/refonte-article-blog.png)
+- [wireframe de la partie trappyblog](./docs/refonte-article-blog.png)
+
+Pour mettre en place cette nouvelle mise en forme, il faut :
+
+- Les images de chaque article sont stockées dans `assets/images/trappy-blog`.
+- pour chaque lien, créer une `div` qui contiendra une image de l'article et le titre par dessus dans un cadre légèrement transparent.
+- pour placer chaque lien, on utilisera flexbox comme on l'a fait pour "nos actions"

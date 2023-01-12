@@ -391,9 +391,18 @@ nav img {
     padding: 0.5vh 0;
 }
 
-.article-logo{
-    display: flex;
-    justify-content: center;
+.media-articles {
+    display:flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.media-articles ul {
+    list-style-type:square;
+}
+
+.article-logo {
+    width: 30%;
 }
 
 .article-logo > img{

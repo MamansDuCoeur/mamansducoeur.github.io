@@ -312,6 +312,9 @@ nav img {
 *       La section Nos actions
 ================================================*/
 
+.actions-list {
+    display: flex;
+}
 
 .action-description {
     text-align: center;

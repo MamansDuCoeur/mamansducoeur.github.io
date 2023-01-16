@@ -276,7 +276,7 @@
                 <h2>Contact</h2>
 
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-5">
                         <h3>Inscription à la newsletter</h3>
 
                         <!-- intégration du formulaire SendinBLue-->
@@ -301,16 +301,14 @@
                         <!--  END - We recommend to place the above code in head tag of your website html -->
 
                         <!-- START - We recommend to place the below code where you want the form in your website html  -->
-                        <div class="sib-form"
-                            style="text-align: center;background-color: #EFF2F7;">
+
                             <div id="sib-form-container"
                                 class="sib-form-container">
                                 <div id="sib-container"
-                                    class="sib-container--large sib-container--vertical"
-                                    style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
+                                    class="sib-container--large sib-container--vertical">
                                     <form id="sib-form" method="POST"
                                         action="https://5302675b.sibforms.com/serve/MUIEAAHQljyJ33voddvdGEUzxDvWgarOv_HiHaassHjIQAyMxcEd2f4M2e9d54dSvBQQKlOsZCay-O50ktWqChcMvu4BQMLpPCnSbu8ijTuN9inElKT8LhOzRKf-y34NbmD9q-WYCDyMsqYxkpRji_225qrktiKjKJ7CdwWJzJvSzkVWwRDcPJddQqhCr6AtsN3LWPKhijuoYNKS">
-                                        <div style="padding: 8px 0;">
+                                        <div>
                                             <div
                                                 class="sib-input sib-form-block">
                                                 <div
@@ -320,24 +318,25 @@
 
                                                         <div
                                                             class="entry__field">
-                                                            <input class="input"
+                                                            <input class="form-control"
                                                                 maxlength="200"
                                                                 type="text"
                                                                 id="NOM"
                                                                 name="NOM"
                                                                 autocomplete="off"
-                                                                placeholder="NOM" />
+                                                                placeholder="Votre nom" />
+                                                            <label for="NOM" class="hide">Votre nom</label>
                                                         </div>
                                                     </div>
-
+                                                    <!-- texte d'erreur à garder -->
                                                     <label
                                                         class="entry__error entry__error--primary"
-                                                        style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                                        style="font-size:1rem; text-align:left;color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div style="padding: 8px 0;">
+                                        <div>
                                             <div
                                                 class="sib-input sib-form-block">
                                                 <div
@@ -347,24 +346,25 @@
 
                                                         <div
                                                             class="entry__field">
-                                                            <input class="input"
+                                                            <input class="form-control"
                                                                 maxlength="200"
                                                                 type="text"
                                                                 id="PRENOM"
                                                                 name="PRENOM"
                                                                 autocomplete="off"
-                                                                placeholder="PRENOM" />
+                                                                placeholder="Votre prénom" />
+                                                            <label for="PRENOM" class="hide">Votre prénom</label>
                                                         </div>
                                                     </div>
-
+                                                    <!-- texte d'erreur à garder -->
                                                     <label
                                                         class="entry__error entry__error--primary"
-                                                        style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                                        style="font-size:1rem; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div style="padding: 8px 0;">
+                                        <div>
                                             <div
                                                 class="sib-input sib-form-block">
                                                 <div
@@ -374,33 +374,33 @@
 
                                                         <div
                                                             class="entry__field">
-                                                            <input class="input"
+                                                            <label for="EMAIL" class="hide">Votre e-mail</label>
+                                                            <input class="form-control"
                                                                 type="text"
                                                                 id="EMAIL"
                                                                 name="EMAIL"
                                                                 autocomplete="off"
-                                                                placeholder="EMAIL"
+                                                                placeholder="Votre e-mail"
                                                                 data-required="true"
                                                                 required />
                                                         </div>
                                                     </div>
-
+                                                    <!-- texte d'erreur à garder -->
                                                     <label
                                                         class="entry__error entry__error--primary"
-                                                        style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                                        style="font-size:16px; text-align:left;color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div style="padding: 8px 0;">
+                                        <div>
                                             <div
                                                 class="sib-optin sib-form-block">
                                                 <div
                                                     class="form__entry entry_mcq">
                                                     <div
                                                         class="form__label-row ">
-                                                        <div class="entry__choice"
-                                                            style="">
+                                                        <div class="entry__choice">
                                                             <label>
                                                                 <input
                                                                     type="checkbox"
@@ -409,45 +409,40 @@
                                                                     id="OPT_IN"
                                                                     name="OPT_IN" />
                                                                 <span
-                                                                    class="checkbox checkbox_tick_positive"></span><span
-                                                                    style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">
-                                                                    <p>J'accepte
-                                                                        de
-                                                                        recevoir
-                                                                        vos
-                                                                        e-mails
-                                                                        et
-                                                                        confirme
-                                                                        avoir
-                                                                        pris
-                                                                        connaissance
-                                                                        de votre
-                                                                        politique
-                                                                        de
-                                                                        confidentialité
-                                                                        et
-                                                                        mentions
-                                                                        légales.
-                                                                    </p>
-                                                                </span> </label>
+                                                                    class="checkbox checkbox_tick_positive"></span>
+                                                                <span style="font-size: 0.8rem;">J'accepte  de  recevoir  vos  e-mails et confirme avoir pris connaissance de votre politique de confidentialité et mentions légales.</span>
+                                                            </label>
                                                         </div>
                                                     </div>
+                                                    <!-- texte d'erreur à garder -->
                                                     <label
                                                         class="entry__error entry__error--primary"
-                                                        style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                                        style="font-size:1rem; text-align:left;color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
                                                     </label>
-                                                    <label
-                                                        class="entry__specification"
-                                                        style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4; text-align:left">
-                                                        Vous pouvez vous
-                                                        désinscrire à tout
-                                                        moment en cliquant sur
-                                                        le lien présent dans nos
-                                                        emails.
-                                                    </label>
+
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div>
+                                            <div class="sib-form-block"
+                                                style="text-align: center">
+                                                <button
+                                                    class="button sib-form-block__button sib-form-block__button-with-loader"
+
+                                                    form="sib-form"
+                                                    type="submit">
+                                                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                                                        viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                    </svg>
+                                                    S'inscrire
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- déclaration de sendinblue -->
                                         <div style="padding: 8px 0;">
                                             <div class="sib-form__declaration"
                                                 style="direction:ltr">
@@ -470,14 +465,14 @@
                                                         </defs>
                                                     </svg>
                                                     <svg class="svgIcon-sphere"
-                                                        style="width:63px; height:63px;">
+                                                        style="width:2rem; height:2rem;">
                                                         <use
                                                             xlink:href="#svgIcon-sphere">
                                                         </use>
                                                     </svg>
                                                 </div>
                                                 <p
-                                                    style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#687484; background-color:transparent;">
+                                                    style="font-size:0.5rem; text-align:left;color:#687484; background-color:transparent;">
                                                     Nous utilisons Sendinblue en
                                                     tant que plateforme
                                                     marketing. En soumettant ce
@@ -497,23 +492,7 @@
                                             </div>
 
                                         </div>
-                                        <div style="padding: 8px 0;">
-                                            <div class="sib-form-block"
-                                                style="text-align: right">
-                                                <button
-                                                    class="sib-form-block__button sib-form-block__button-with-loader"
-                                                    style="font-size:16px; text-align:right; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;"
-                                                    form="sib-form"
-                                                    type="submit">
-                                                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
-                                                        viewBox="0 0 512 512">
-                                                        <path
-                                                            d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                                                    </svg>
-                                                    S&#039;INSCRIRE
-                                                </button>
-                                            </div>
-                                        </div>
+                                        <!-- champs cachés nécessaires au fonctionnement de sendinblue -->
                                         <input type="text"
                                             name="email_address_check" value=""
                                             class="input--hidden">
@@ -524,7 +503,6 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>
                         <!-- END - We recommend to place the below code where you want the form in your website html  -->
                         <!-- End Sendinblue Form -->
 

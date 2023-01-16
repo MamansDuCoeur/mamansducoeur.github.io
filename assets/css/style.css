@@ -24,9 +24,11 @@ h6 {
     margin: 0;
     padding: 0;
 }
+
 header {
-    height:100vh;
+    height: 100vh;
 }
+
 a {
     text-decoration: none;
     /* on enlève le soulignement par défaut du text */
@@ -82,22 +84,23 @@ a:hover {
 }
 
 /*Essai pour supprimer le surlignage des icônes de Font Awesome*/
-a i[class^="fa-"]:hover, a i[class*=" fa-"]:hover {
+a i[class^="fa-"]:hover,
+a i[class*=" fa-"]:hover {
     text-decoration: none;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 2vh;
 }
 
-.yellow-bg{
+.yellow-bg {
     background: linear-gradient(to right, #ffdb5a, #fff0d4);
 }
 
-.hide{
+.hide {
     display: none;
 }
 
@@ -210,7 +213,7 @@ form{
     cursor: pointer;
 }
 
-#home .submenu{
+#home .submenu {
     border-bottom-left-radius: 1.5em;
     border-bottom-right-radius: 1.5em;
     border-top-right-radius: 1.5em;
@@ -226,7 +229,7 @@ form{
 
 
 
-#home .submenu a{
+#home .submenu a {
     display: block;
     margin: 1vh 0vw;
     color: white;
@@ -234,7 +237,7 @@ form{
     padding: 7px 21px;
 }
 
-#home .submenu a:hover{
+#home .submenu a:hover {
     border-radius: 1em;
     color: #6C0505;
     background-color: #FFDB5A;
@@ -263,7 +266,7 @@ nav {
 }
 
 nav img {
-    height:17vh;
+    height: 17vh;
 }
 
 .menu {
@@ -272,13 +275,13 @@ nav img {
     gap: 1.2rem;
 }
 
-.menu-socials{
+.menu-socials {
     text-align: right;
     margin-right: 1.2rem;
     margin-bottom: 1.2rem;
 }
 
-.menu-socials a{
+.menu-socials a {
     padding-left: 1.2rem;
 }
 
@@ -324,7 +327,7 @@ nav img {
     height: 50%;
 }
 
-.actions-card__img img{
+.actions-card__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -366,11 +369,11 @@ nav img {
         0 - total transparence
         255 - pas de transparence
     */
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border: none;
 }
 
-.masque{
+.masque {
     overflow: hidden;
 }
 
@@ -382,35 +385,70 @@ nav img {
 *  Section medias
 =================================================*/
 
-.action-youtube{
-    text-align: center;
-    padding: 0 5vw;
+.action-youtube {
+    text-align: left;
+    padding: 0 1rem; /* top/bottom left/right */
 }
 
-.article-item{
+.article-item {
     padding: 0.5vh 0;
 }
 
-.media-articles {
-    display:flex;
-    align-items: center;
+.media-articles_content {
+    display: flex;
+    align-items: flex-start;
     gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.media-articles__title {
+    width: 100%;
 }
 
 .media-articles ul {
-    list-style-type:square;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
 }
+
+.media-articles ul li {
+    width: 30%;
+    height: 7rem;
+    overflow: hidden;
+}
+
+.media-articles ul li img {
+    max-width: 100%;
+}
+
+.media-articles ul li div {
+    position: relative;
+}
+
+/* pour positionner la balise p dans son parent, on positionne le parent en relative d'abord */
+.media-articles ul li p {
+    position: absolute;
+    top: 0;
+    color: white;
+    text-shadow: 1px 1px black;
+    padding: 0.5rem;
+    background-color: #0000002d;
+    height: 100%;
+}
+
+
 
 .article-logo {
-    width: 30%;
+    width: 40%;
 }
 
-.article-logo > img{
+.article-logo>img {
     width: 100%;
     height: auto;
 }
 
-.media-yt-embed{
+.media-yt-embed {
     width: 30vw;
     height: 40vh;
 }
@@ -430,29 +468,29 @@ GESTION DU RESPONSIVE
     }
 
     .masque {
-       min-width: 75vw;
-       min-height: 75vw;
-       width: 75vw;
-       height: 75vw;
+        min-width: 75vw;
+        min-height: 75vw;
+        width: 75vw;
+        height: 75vw;
     }
 
-    .masque img{
+    .masque img {
         width: 75vw;
         height: 75vw;
         margin: 0 auto;
     }
 
-    .media-yt-embed{
+    .media-yt-embed {
         width: 75vw;
         margin-bottom: 4vh;
     }
 
-    .article-logo{
+    .article-logo {
         width: 75vw;
         margin: 2vh auto;
     }
 
-    .articles{
+    .articles {
         margin: 2vh auto;
     }
 
@@ -462,7 +500,7 @@ GESTION DU RESPONSIVE
 *   Section contact
 *=====================================================*/
 
-#openstreetmap{
+#openstreetmap {
     width: 40vw;
     height: 40vh;
     margin: auto auto;

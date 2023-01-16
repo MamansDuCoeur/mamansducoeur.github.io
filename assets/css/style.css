@@ -455,8 +455,8 @@ nav img {
 GESTION DU RESPONSIVE
 
 *=======================================*/
-/** On va ajouter des règles css pour les écran faisant moins de 900px de large*/
-@media (max-width: 1000px) {
+/** On va ajouter des règles css pour les écrans faisant moins de 992px de large*/
+@media (max-width: 992px) {
     .actions-list {
         flex-direction: column;
         row-gap: 1rem;
@@ -477,8 +477,8 @@ GESTION DU RESPONSIVE
 }
 
 
-/* Si l'écran mesure au maximum 750px alors  : */
-@media (max-width: 750px) {
+/* Si l'écran mesure au maximum 768px alors  : */
+@media (max-width: 768px) {
 
     .masque {
         min-width: 75vw;

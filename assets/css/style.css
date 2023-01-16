@@ -463,9 +463,7 @@ GESTION DU RESPONSIVE
 @media (max-width: 576px) {
 
     /** notre action prend 752% de la largeur et donc s'empile sur les autres**/
-    .action {
-        width: 75vw;
-    }
+
 
     .masque {
         min-width: 75vw;
@@ -492,6 +490,14 @@ GESTION DU RESPONSIVE
 
     .articles {
         margin: 2vh auto;
+    }
+
+    .actions-list {
+        flex-direction: column;
+    }
+
+    .action {
+        width: 75vw; /* problème !*/
     }
 
 }

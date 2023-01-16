@@ -2,91 +2,38 @@
 
 <html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Mamans du C&oelig;ur</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Les Mamans du C&oelig;ur</title>
 
-    <!-- Integration des librairies et dépendences -->
+        <!-- Integration des librairies et dépendences -->
 
-    <!-- Intégration du css bootstrap en accès http -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+        <!-- Intégration du css bootstrap en accès http -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
 
-    <!-- Intégration du css bootstrap en local -->
-    <link rel="stylesheet" href="lib/leaflet/leaflet.css">
-    <link rel="stylesheet" href="lib/bootstrap-5.3.0/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/09fd75eb86.js" crossorigin="anonymous"></script>
-
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
-
-    <header id="home" class="background">
-        <div>
-            <img src="assets/logos/logo-mamans.png" alt="Logo Mamans du Coeur" class="logo">
-
-            <div class="social-links-container">
-                <a href="https://www.facebook.com/mamansducoeurTrappes/" class="social-link" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                    Facebook
-                </a>
-                <a href="tel:+33689271120" class="social-link">
-                    <i class="fa-solid fa-phone"></i>
-                    +33 6 89 27 11 20
-                </a>
-            </div>
-
-            <div class="buttons-container">
-                <a id="presentation" class="button">Présentation &nbsp;
-                    <i id="dropdown-arrow" class="fa-sharp fa-solid fa-caret-down hide"></i>
-
-                </a>
+        <!-- Intégration du css bootstrap en local -->
+        <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+        <link rel="stylesheet" href="lib/bootstrap-5.3.0/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/09fd75eb86.js"
+            crossorigin="anonymous"></script>
 
 
-                <a href="#dons" class="button">Faire un don</a>
-                <a href="#contact" class="button">Contact</a>
-                <a href="#partenaires" class="button">Partenaires</a>
-            </div>
+        <link rel="stylesheet" href="assets/css/style.css">
 
-            <div id="submenu" class="submenu hide">
-                <a href="#qui">Qui sommes-nous ?</a>
-                <a href="#actions">Nos actions</a>
-                <a href="#medias">Médias</a>
-            </div>
+    </head>
 
-            <h1>Les Mamans du C&oelig;ur</h1>
+    <body>
 
-            <p>Les Mamans du C&oelig;ur est une association d'une dizaine d'années qui mène des actions sociales à Trappes,
-                dans les Yvelines (78).
-            </p>
-            <p>Collecte de dons, Ateliers d'écriture et de parole, sorties citoyennes et écologiques, intégration
-                sociale, et plus
-                encore...</p>
-        </div>
-
-        <div class="slider-buttons">
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-        </div>
-    </header>
-    <main>
-        <nav>
-            <a href="#home">
-                <img src="assets/logos/logo-mamans.png" alt="Logo Mamans du Coeur">
-            </a>
-
-
+        <header id="home" class="background">
             <div>
-                <div class="menu-socials">
-                    <a href="https://www.facebook.com/mamansducoeurTrappes/" class="social-link" target="_blank">
+                <img src="assets/logos/logo-mamans.png"
+                    alt="Logo Mamans du Coeur" class="logo">
+
+                <div class="social-links-container">
+                    <a href="https://www.facebook.com/mamansducoeurTrappes/"
+                        class="social-link" target="_blank">
                         <i class="fa-brands fa-facebook"></i>
                         Facebook
                     </a>
@@ -95,239 +42,577 @@
                         +33 6 89 27 11 20
                     </a>
                 </div>
-                <ul class="menu">
-                    <li><a href="#qui">Qui sommes-nous ?</a></li>
-                    <li><a href="#actions">Nos actions</a></li>
-                    <li><a href="#medias">Médias</a></li>
-                    <li><a href="#dons">Faire un don</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#partenaires">Partenaires</a></li>
-                </ul>
-            </div>
-        </nav>
 
-        <section id="qui">
-            <h2>Qui sommes-nous ?</h2>
-        </section>
-        <section id="actions" class="yellow-bg">
-            <h2>Nos Actions</h2>
+                <div class="buttons-container">
+                    <a id="presentation" class="button">Présentation &nbsp;
+                        <i id="dropdown-arrow"
+                            class="fa-sharp fa-solid fa-caret-down hide"></i>
 
-            <div class="actions-list">
-                <!-- div parent qui aura le display:flex -->
-                <div class="actions-card action">
-                    <div class="actions-card__img" id="action-1">
-                        <img src="./assets/images/actions/action-1.jpg" alt="Card image cap" />
-                    </div>
-                    <div class="actions-card__body">
-                        <p class="action-description">
-                            Nous surpervisons la distribution de collectes alimentaires et de biens de première
-                            nécessité auprès de nos partenaires. Faites nous part de vos besoins ou <a
-                                href="#dons">soutenez notre action</a>.
-                        </p>
-                    </div>
+                    </a>
+
+
+                    <a href="#dons" class="button">Faire un don</a>
+                    <a href="#contact" class="button">Contact</a>
+                    <a href="#partenaires" class="button">Partenaires</a>
                 </div>
 
-                <div class="actions-card action">
-                    <div class="actions-card__img" id="action-2">
-                        <img src="./assets/images/actions/action-2.jpg" alt="Card image cap" />
-                    </div>
-                    <div class="actions-card__body">
-                        <p class="card-text action-description">
-                            Dans nos <a href="#contact">hôtels partenaires</a>, un bénévole référent recueille les
-                            besoins sur place
-                            (écoute et résolution de problèmes, conseils et aide pratique, etc).
-                        </p>
-                    </div>
+                <div id="submenu" class="submenu hide">
+                    <a href="#qui">Qui sommes-nous ?</a>
+                    <a href="#actions">Nos actions</a>
+                    <a href="#medias">Médias</a>
                 </div>
 
-                <div class="actions-card action">
-                    <div class="actions-card__img" id="action-3">
-                        <img src="./assets/images/actions/action-3-small.jpg" alt="Card image cap" />
-                    </div>
-                    <div class="actions-card__body">
-                        <p class="card-text action-description ">
-                            Nous mettons en place des ateliers d'écriture et de parole où les participants échangent
-                            leurs opinions en apprenant l'écoute active.
-                        </p>
-                    </div>
-                </div>
+                <h1>Les Mamans du C&oelig;ur</h1>
 
+                <p>Les Mamans du C&oelig;ur est une association d'une dizaine
+                    d'années qui mène des actions sociales à Trappes,
+                    dans les Yvelines (78).
+                </p>
+                <p>Collecte de dons, Ateliers d'écriture et de parole, sorties
+                    citoyennes et écologiques, intégration
+                    sociale, et plus
+                    encore...</p>
             </div>
 
-        </section>
-        <section id="medias">
-            <h2>Nos médias</h2>
-
-
-            <div class="row">
-                <div class="col">
-                    <!--Revoir le texte-->
-                    <h3>Les Mamans du C&oelig;ur sur Youtube</h3>
-                    <p class="action-youtube">Objet : recréer un dialogue entre les parents et les adolescents ; faire
-                        participer les jeunes à la vie de quartier ; faire en sorte que les parents aident activement
-                        les jeunes à monter des projets professionnels culturels et de loisirs.</p>
-                </div>
-                <div class="col">
-                    <iframe class="media-yt-embed" src="https://www.youtube.com/embed/qWXzxplB1x8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="col">
-                    <iframe class="media-yt-embed" src="https://www.youtube.com/embed/dosTVlB_f5I"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
+            <div class="slider-buttons">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
             </div>
-            <!-- ==== Rajouter les courts-métrages? ===
-            ===Titre propo: Les Mamans font leur cinéma === -->
+        </header>
+        <main>
+            <nav>
+                <a href="#home">
+                    <img src="assets/logos/logo-mamans.png"
+                        alt="Logo Mamans du Coeur">
+                </a>
 
-            <div class="media-articles">
-                <div class="article-logo">
-                    <img src="./assets/images/partenaires/TrappyBlog_Logo_H300.png" alt="Logo Trappy Blog">
-                </div>
+
                 <div>
-                    <h3 class="mt-5">Ils parlent de nous</h3>
-                    <ul>
-                        <li class="article-item">
-                            <a target="_blank" href="https://www.trappyblog.fr/un-scenario-pour-denoncer-les-injustices-subies-par-les-adolescentes-des-quartiers/">Un
-                                scénario pour dénoncer les injustices subies par les adolescentes des quartiers - Trappy
-                                Blog</a>
-                        </li>
-                        <li class="article-item">
-                            <a target="_blank" href="https://www.trappyblog.fr/des-mamans-du-coeur-se-nourrissent-des-repas-quelles-partagent/">Des
-                                Mamans du Cœur se nourrissent des repas qu'elles partagent - Trappy Blog</a>
-                        </li>
-                        <li class="article-item">
-                            <a target="_blank" href="https://www.trappyblog.fr/mohamed-lamine-diakhite-un-visage-des-migrants-qui-nen-ont-pas/">Mohamed
-                                Lamine Diakhité, un visage des migrants qui n’en ont pas - Trappy Blog</a>
-                        </li>
-                        <li class="article-item">
-                            <a target="_blank" href="https://www.trappyblog.fr/des-mamans-de-djihadistes-se-livrent-au-forum-pour-la-paix-a-caen/">Des
-                                mamans de djihadistes se livrent au forum pour la paix à Caen - Trappy Blog</a>
-                        </li>
-                        <li class="article-item">
-                            <a target="_blank" href="https://www.trappyblog.fr/le-dispositif-mon-premier-job-fait-le-travail/">Le
-                                dispositif
-                                « Mon premier Job ! » fait le travail - Trappy Blog</a>
-                        </li>
-                        <li class="article-item">
-                            <a target="_blank" href="https://www.trappyblog.fr/lassociation-teame-pousse-les-jeunes-a-faire-equipe-pour-quils-developpent-leurs-projets/">Le
-                                projet Teame pousse les jeunes à faire équipe pour développer leurs projets - Trappy
-                                Blog</a>
-                        </li>
-                        <li class="article-item">
-                            <a target="_blank" href="https://www.trappyblog.fr/bilans-de-trois-scolarites-a-la-sortie-du-lycee/">Bilans
-                                de
-                                trois scolarités à la sortie du lycée - Trappy Blog</a>
-                        </li>
+                    <div class="menu-socials">
+                        <a href="https://www.facebook.com/mamansducoeurTrappes/"
+                            class="social-link" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="tel:+33689271120" class="social-link">
+                            <i class="fa-solid fa-phone"></i>
+                            +33 6 89 27 11 20
+                        </a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#qui">Qui sommes-nous ?</a></li>
+                        <li><a href="#actions">Nos actions</a></li>
+                        <li><a href="#medias">Médias</a></li>
+                        <li><a href="#dons">Faire un don</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#partenaires">Partenaires</a></li>
                     </ul>
                 </div>
-            </div>
-        </section>
+            </nav>
 
-        <section id="dons" class="yellow-bg">
-            <h2>Faire un don</h2>
-            <iframe id="haWidget" allowtransparency="true" scrolling="no" src="https://www.helloasso.com/associations/amc-les-mamans-du-coeur/formulaires/1/widget" style="width:100%;height:80rem;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
+            <section id="qui">
+                <h2>Qui sommes-nous ?</h2>
+            </section>
+            <section id="actions" class="yellow-bg">
+                <h2>Nos Actions</h2>
 
-            <div class="row">
-                <div class="col-4">
-                    <h3>Inscription à la newsletter</h3>
-
-                    <!-- On simule l'intégration du formulaire SendinBLue-->
-                    <form w-50 mx-auto>
-                        <label for="newsletter-lastname" class="hide">Votre nom :</label>
-                        <input type="text" id="newsletter-lastname" name="newsletter-lastname"
-                            placeholder="Votre nom" />
-                        <label for="newsletter-firstname" class="hide">Votre prénom :</label>
-                        <input type="text" id="newsletter-firstname" name="newsletter-lastname"
-                            placeholder="Votre prénom" />
-                        <label for="newsletter-email" class="hide">Votre e-mail :</label>
-                        <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Votre E-mail" />
-                        <div>
-                            <input type="checkbox" id="newsletter-validate" name="newsletter-validate" />
-                            <label for="newsletter-validate">Je souhaites m'inscrire à la Newsletter des Mamans du
-                                C&oelig;ur</label>
+                <div class="actions-list">
+                    <!-- div parent qui aura le display:flex -->
+                    <div class="actions-card action">
+                        <div class="actions-card__img" id="action-1">
+                            <img src="./assets/images/actions/action-1.jpg"
+                                alt="Card image cap" />
                         </div>
+                        <div class="actions-card__body">
+                            <p class="action-description">
+                                Nous surpervisons la distribution de collectes
+                                alimentaires et de biens de première
+                                nécessité auprès de nos partenaires. Faites nous
+                                part de vos besoins ou <a href="#dons">soutenez
+                                    notre action</a>.
+                            </p>
+                        </div>
+                    </div>
 
-                        <input class="button" type="submit" value="S'inscrire" />
-                    </form>
+                    <div class="actions-card action">
+                        <div class="actions-card__img" id="action-2">
+                            <img src="./assets/images/actions/action-2.jpg"
+                                alt="Card image cap" />
+                        </div>
+                        <div class="actions-card__body">
+                            <p class="card-text action-description">
+                                Dans nos <a href="#contact">hôtels
+                                    partenaires</a>, un bénévole référent
+                                recueille les
+                                besoins sur place
+                                (écoute et résolution de problèmes, conseils et
+                                aide pratique, etc).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="actions-card action">
+                        <div class="actions-card__img" id="action-3">
+                            <img src="./assets/images/actions/action-3-small.jpg"
+                                alt="Card image cap" />
+                        </div>
+                        <div class="actions-card__body">
+                            <p class="card-text action-description ">
+                                Nous mettons en place des ateliers d'écriture et
+                                de parole où les participants échangent
+                                leurs opinions en apprenant l'écoute active.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col">
-                    <h3>Les hôtels partenaires</h3>
-                    <div id="openstreetmap"></div>
-                    <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1CSdw176E1M0gcIXO3vQmdF_0ZKV4J00&ehbc=2E312F" width="640" height="480"></iframe> -->
+
+            </section>
+            <section id="medias">
+                <h2>Nos médias</h2>
+
+
+                <div class="row">
+                    <div class="col">
+                        <!--Revoir le texte-->
+                        <h3>Les Mamans du C&oelig;ur sur Youtube</h3>
+                        <p class="action-youtube">Objet : recréer un dialogue
+                            entre les parents et les adolescents ; faire
+                            participer les jeunes à la vie de quartier ; faire
+                            en sorte que les parents aident activement
+                            les jeunes à monter des projets professionnels
+                            culturels et de loisirs.</p>
+                    </div>
+                    <div class="col">
+                        <iframe class="media-yt-embed"
+                            src="https://www.youtube.com/embed/qWXzxplB1x8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col">
+                        <iframe class="media-yt-embed"
+                            src="https://www.youtube.com/embed/dosTVlB_f5I"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
+                <!-- ==== Rajouter les courts-métrages? ===
+            ===Titre propo: Les Mamans font leur cinéma === -->
+
+                <div class="media-articles">
+                    <div class="article-logo">
+                        <img src="./assets/images/partenaires/TrappyBlog_Logo_H300.png"
+                            alt="Logo Trappy Blog">
+                    </div>
+                    <div>
+                        <h3 class="mt-5">Ils parlent de nous</h3>
+                        <ul>
+                            <li class="article-item">
+                                <a target="_blank"
+                                    href="https://www.trappyblog.fr/un-scenario-pour-denoncer-les-injustices-subies-par-les-adolescentes-des-quartiers/">Un
+                                    scénario pour dénoncer les injustices subies
+                                    par les adolescentes des quartiers - Trappy
+                                    Blog</a>
+                            </li>
+                            <li class="article-item">
+                                <a target="_blank"
+                                    href="https://www.trappyblog.fr/des-mamans-du-coeur-se-nourrissent-des-repas-quelles-partagent/">Des
+                                    Mamans du Cœur se nourrissent des repas
+                                    qu'elles partagent - Trappy Blog</a>
+                            </li>
+                            <li class="article-item">
+                                <a target="_blank"
+                                    href="https://www.trappyblog.fr/mohamed-lamine-diakhite-un-visage-des-migrants-qui-nen-ont-pas/">Mohamed
+                                    Lamine Diakhité, un visage des migrants qui
+                                    n’en ont pas - Trappy Blog</a>
+                            </li>
+                            <li class="article-item">
+                                <a target="_blank"
+                                    href="https://www.trappyblog.fr/des-mamans-de-djihadistes-se-livrent-au-forum-pour-la-paix-a-caen/">Des
+                                    mamans de djihadistes se livrent au forum
+                                    pour la paix à Caen - Trappy Blog</a>
+                            </li>
+                            <li class="article-item">
+                                <a target="_blank"
+                                    href="https://www.trappyblog.fr/le-dispositif-mon-premier-job-fait-le-travail/">Le
+                                    dispositif
+                                    « Mon premier Job ! » fait le travail -
+                                    Trappy Blog</a>
+                            </li>
+                            <li class="article-item">
+                                <a target="_blank"
+                                    href="https://www.trappyblog.fr/lassociation-teame-pousse-les-jeunes-a-faire-equipe-pour-quils-developpent-leurs-projets/">Le
+                                    projet Teame pousse les jeunes à faire
+                                    équipe pour développer leurs projets -
+                                    Trappy
+                                    Blog</a>
+                            </li>
+                            <li class="article-item">
+                                <a target="_blank"
+                                    href="https://www.trappyblog.fr/bilans-de-trois-scolarites-a-la-sortie-du-lycee/">Bilans
+                                    de
+                                    trois scolarités à la sortie du lycée -
+                                    Trappy Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dons" class="yellow-bg">
+                <h2>Faire un don</h2>
+                <iframe id="haWidget" allowtransparency="true" scrolling="yes"
+                    src="https://www.helloasso.com/associations/amc-les-mamans-du-coeur/formulaires/1/widget"
+                    style="width:100%;height:80rem;border:none;"
+                    onload="window.scroll(0, this.offsetTop)"></iframe>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Inscription à la newsletter</h3>
+
+                        <!-- intégration du formulaire SendinBLue-->
+
+                        <!-- Begin Sendinblue Form -->
+                        <!-- START - We recommend to place the below code in head tag of your website html  -->
+                        <style>
+                            #sib-container input:-ms-input-placeholder {
+                                text-align: left;
+                                font-family: "Helvetica", sans-serif;
+                                color: #c0ccda;
+                            }
+
+                            #sib-container input::placeholder {
+                                text-align: left;
+                                font-family: "Helvetica", sans-serif;
+                                color: #c0ccda;
+                            }
+                        </style>
+                        <link rel="stylesheet"
+                            href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+                        <!--  END - We recommend to place the above code in head tag of your website html -->
+
+                        <!-- START - We recommend to place the below code where you want the form in your website html  -->
+                        <div class="sib-form"
+                            style="text-align: center;background-color: #EFF2F7;">
+                            <div id="sib-form-container"
+                                class="sib-form-container">
+                                <div id="sib-container"
+                                    class="sib-container--large sib-container--vertical"
+                                    style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
+                                    <form id="sib-form" method="POST"
+                                        action="https://5302675b.sibforms.com/serve/MUIEAAHQljyJ33voddvdGEUzxDvWgarOv_HiHaassHjIQAyMxcEd2f4M2e9d54dSvBQQKlOsZCay-O50ktWqChcMvu4BQMLpPCnSbu8ijTuN9inElKT8LhOzRKf-y34NbmD9q-WYCDyMsqYxkpRji_225qrktiKjKJ7CdwWJzJvSzkVWwRDcPJddQqhCr6AtsN3LWPKhijuoYNKS">
+                                        <div style="padding: 8px 0;">
+                                            <div
+                                                class="sib-input sib-form-block">
+                                                <div
+                                                    class="form__entry entry_block">
+                                                    <div
+                                                        class="form__label-row ">
+
+                                                        <div
+                                                            class="entry__field">
+                                                            <input class="input"
+                                                                maxlength="200"
+                                                                type="text"
+                                                                id="NOM"
+                                                                name="NOM"
+                                                                autocomplete="off"
+                                                                placeholder="NOM" />
+                                                        </div>
+                                                    </div>
+
+                                                    <label
+                                                        class="entry__error entry__error--primary"
+                                                        style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="padding: 8px 0;">
+                                            <div
+                                                class="sib-input sib-form-block">
+                                                <div
+                                                    class="form__entry entry_block">
+                                                    <div
+                                                        class="form__label-row ">
+
+                                                        <div
+                                                            class="entry__field">
+                                                            <input class="input"
+                                                                maxlength="200"
+                                                                type="text"
+                                                                id="PRENOM"
+                                                                name="PRENOM"
+                                                                autocomplete="off"
+                                                                placeholder="PRENOM" />
+                                                        </div>
+                                                    </div>
+
+                                                    <label
+                                                        class="entry__error entry__error--primary"
+                                                        style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="padding: 8px 0;">
+                                            <div
+                                                class="sib-input sib-form-block">
+                                                <div
+                                                    class="form__entry entry_block">
+                                                    <div
+                                                        class="form__label-row ">
+
+                                                        <div
+                                                            class="entry__field">
+                                                            <input class="input"
+                                                                type="text"
+                                                                id="EMAIL"
+                                                                name="EMAIL"
+                                                                autocomplete="off"
+                                                                placeholder="EMAIL"
+                                                                data-required="true"
+                                                                required />
+                                                        </div>
+                                                    </div>
+
+                                                    <label
+                                                        class="entry__error entry__error--primary"
+                                                        style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="padding: 8px 0;">
+                                            <div
+                                                class="sib-optin sib-form-block">
+                                                <div
+                                                    class="form__entry entry_mcq">
+                                                    <div
+                                                        class="form__label-row ">
+                                                        <div class="entry__choice"
+                                                            style="">
+                                                            <label>
+                                                                <input
+                                                                    type="checkbox"
+                                                                    class="input_replaced"
+                                                                    value="1"
+                                                                    id="OPT_IN"
+                                                                    name="OPT_IN" />
+                                                                <span
+                                                                    class="checkbox checkbox_tick_positive"></span><span
+                                                                    style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">
+                                                                    <p>J'accepte
+                                                                        de
+                                                                        recevoir
+                                                                        vos
+                                                                        e-mails
+                                                                        et
+                                                                        confirme
+                                                                        avoir
+                                                                        pris
+                                                                        connaissance
+                                                                        de votre
+                                                                        politique
+                                                                        de
+                                                                        confidentialité
+                                                                        et
+                                                                        mentions
+                                                                        légales.
+                                                                    </p>
+                                                                </span> </label>
+                                                        </div>
+                                                    </div>
+                                                    <label
+                                                        class="entry__error entry__error--primary"
+                                                        style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                                    </label>
+                                                    <label
+                                                        class="entry__specification"
+                                                        style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4; text-align:left">
+                                                        Vous pouvez vous
+                                                        désinscrire à tout
+                                                        moment en cliquant sur
+                                                        le lien présent dans nos
+                                                        emails.
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="padding: 8px 0;">
+                                            <div class="sib-form__declaration"
+                                                style="direction:ltr">
+                                                <div
+                                                    class="declaration-block-icon">
+                                                    <svg class="icon__SVG"
+                                                        width="0" height="0"
+                                                        version="1.1"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <defs>
+                                                            <symbol
+                                                                id="svgIcon-sphere"
+                                                                viewBox="0 0 63 63">
+                                                                <path
+                                                                    class="path1"
+                                                                    d="M31.54 0l1.05 3.06 3.385-.01-2.735 1.897 1.05 3.042-2.748-1.886-2.738 1.886 1.044-3.05-2.745-1.897h3.393zm13.97 3.019L46.555 6.4l3.384.01-2.743 2.101 1.048 3.387-2.752-2.1-2.752 2.1 1.054-3.382-2.745-2.105h3.385zm9.998 10.056l1.039 3.382h3.38l-2.751 2.1 1.05 3.382-2.744-2.091-2.743 2.091 1.054-3.381-2.754-2.1h3.385zM58.58 27.1l1.04 3.372h3.379l-2.752 2.096 1.05 3.387-2.744-2.091-2.75 2.092 1.054-3.387-2.747-2.097h3.376zm-3.076 14.02l1.044 3.364h3.385l-2.743 2.09 1.05 3.392-2.744-2.097-2.743 2.097 1.052-3.377-2.752-2.117 3.385-.01zm-9.985 9.91l1.045 3.364h3.393l-2.752 2.09 1.05 3.393-2.745-2.097-2.743 2.097 1.05-3.383-2.751-2.1 3.384-.01zM31.45 55.01l1.044 3.043 3.393-.008-2.752 1.9L34.19 63l-2.744-1.895-2.748 1.891 1.054-3.05-2.743-1.9h3.384zm-13.934-3.98l1.036 3.364h3.402l-2.752 2.09 1.053 3.393-2.747-2.097-2.752 2.097 1.053-3.382-2.743-2.1 3.384-.01zm-9.981-9.91l1.045 3.364h3.398l-2.748 2.09 1.05 3.392-2.753-2.1-2.752 2.096 1.053-3.382-2.743-2.102 3.384-.009zM4.466 27.1l1.038 3.372H8.88l-2.752 2.097 1.053 3.387-2.743-2.09-2.748 2.09 1.053-3.387L0 30.472h3.385zm3.069-14.025l1.045 3.382h3.395L9.23 18.56l1.05 3.381-2.752-2.09-2.752 2.09 1.053-3.381-2.744-2.1h3.384zm9.99-10.056L18.57 6.4l3.393.01-2.743 2.1 1.05 3.373-2.754-2.092-2.751 2.092 1.053-3.382-2.744-2.1h3.384zm24.938 19.394l-10-4.22a2.48 2.48 0 00-1.921 0l-10 4.22A2.529 2.529 0 0019 24.75c0 10.47 5.964 17.705 11.537 20.057a2.48 2.48 0 001.921 0C36.921 42.924 44 36.421 44 24.75a2.532 2.532 0 00-1.537-2.336zm-2.46 6.023l-9.583 9.705a.83.83 0 01-1.177 0l-5.416-5.485a.855.855 0 010-1.192l1.177-1.192a.83.83 0 011.177 0l3.65 3.697 7.819-7.916a.83.83 0 011.177 0l1.177 1.191a.843.843 0 010 1.192z"
+                                                                    fill="#0092FF">
+                                                                </path>
+                                                            </symbol>
+                                                        </defs>
+                                                    </svg>
+                                                    <svg class="svgIcon-sphere"
+                                                        style="width:63px; height:63px;">
+                                                        <use
+                                                            xlink:href="#svgIcon-sphere">
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <p
+                                                    style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#687484; background-color:transparent;">
+                                                    Nous utilisons Sendinblue en
+                                                    tant que plateforme
+                                                    marketing. En soumettant ce
+                                                    formulaire, vous
+                                                    reconnaissez que les
+                                                    informations que vous allez
+                                                    fournir seront transmises à
+                                                    Sendinblue en sa qualité de
+                                                    processeur de données; et ce
+                                                    conformément à ses <a
+                                                        target="_blank"
+                                                        class="clickable_link"
+                                                        href="https://fr.sendinblue.com/legal/termsofuse/">conditions
+                                                        générales
+                                                        d'utilisation</a>.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div style="padding: 8px 0;">
+                                            <div class="sib-form-block"
+                                                style="text-align: right">
+                                                <button
+                                                    class="sib-form-block__button sib-form-block__button-with-loader"
+                                                    style="font-size:16px; text-align:right; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;"
+                                                    form="sib-form"
+                                                    type="submit">
+                                                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                                                        viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                    </svg>
+                                                    S&#039;INSCRIRE
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input type="text"
+                                            name="email_address_check" value=""
+                                            class="input--hidden">
+                                        <input type="hidden" name="locale"
+                                            value="fr">
+                                        <input type="hidden" name="html_type"
+                                            value="simple">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END - We recommend to place the below code where you want the form in your website html  -->
+                        <!-- End Sendinblue Form -->
 
 
-        </section>
 
-        <section id="partenaires" class="yellow-bg">
+                    </div>
+                    <div class="col">
+                        <h3>Les hôtels partenaires</h3>
+                        <div id="openstreetmap"></div>
+                        <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1CSdw176E1M0gcIXO3vQmdF_0ZKV4J00&ehbc=2E312F" width="640" height="480"></iframe> -->
+                    </div>
+                </div>
 
-            <h2>Nos partenaires</h2>
 
-            <div class="box">
-                <a target="_blank" href="https://www.fondation-abbe-pierre.fr/">
-                    <img src="assets/images/partenaires/fap.png" alt="Fondation Abbé Pierre">
-                </a>
+            </section>
 
-                <a target="_blank" href="https://association-elancoeur.org/">
-                    <img src="assets/images/partenaires/elancoeur.png" alt="Elan coeur">
-                </a>
+            <section id="partenaires" class="yellow-bg">
 
-                <a target="_blank" href="https://www.trappes.fr/">
-                    <img src="assets/images/partenaires/logo-trappes-fr.png" alt="Ville de Trappe">
-                </a>
+                <h2>Nos partenaires</h2>
 
-                <a target="_blank" href="https://fodolfrance.com/">
-                    <img src="assets/images/partenaires/fodol.png" alt="Fodol France">
-                </a>
+                <div class="box">
+                    <a target="_blank"
+                        href="https://www.fondation-abbe-pierre.fr/">
+                        <img src="assets/images/partenaires/fap.png"
+                            alt="Fondation Abbé Pierre">
+                    </a>
 
-                <a target="_blank" href="https://fr.iofc.org/fr">
-                    <img style="padding: 6vh 0;" src="assets/images/partenaires/initiative.png"
-                        alt="Initiatives et changement">
-                </a>
+                    <a target="_blank"
+                        href="https://association-elancoeur.org/">
+                        <img src="assets/images/partenaires/elancoeur.png"
+                            alt="Elan coeur">
+                    </a>
 
-                <a target="_blank" href="https://www.qassama.org/">
-                    <img src="assets/images/partenaires/qassama.png" alt="Qassama">
-                </a>
+                    <a target="_blank" href="https://www.trappes.fr/">
+                        <img src="assets/images/partenaires/logo-trappes-fr.png"
+                            alt="Ville de Trappe">
+                    </a>
 
-                <a target="_blank" href="https://www.trappyblog.fr">
-                    <img src="assets/images/partenaires/TrappyBlog_Logo_H300.png" alt="Trappy Blog">
-                </a>
+                    <a target="_blank" href="https://fodolfrance.com/">
+                        <img src="assets/images/partenaires/fodol.png"
+                            alt="Fodol France">
+                    </a>
 
-                <a target="_blank" href="https://www.cdc-habitat.fr/">
-                    <img src="assets/images/partenaires/1280px-CDC-habitat.png" alt="CDC Habitat">
-                </a>
-            </div>
+                    <a target="_blank" href="https://fr.iofc.org/fr">
+                        <img style="padding: 6vh 0;"
+                            src="assets/images/partenaires/initiative.png"
+                            alt="Initiatives et changement">
+                    </a>
 
-        </section>
-    </main>
+                    <a target="_blank" href="https://www.qassama.org/">
+                        <img src="assets/images/partenaires/qassama.png"
+                            alt="Qassama">
+                    </a>
 
-    <footer>
-        <!--    *lien vers les politiques de confidentialité et mentions legales
+                    <a target="_blank" href="https://www.trappyblog.fr">
+                        <img src="assets/images/partenaires/TrappyBlog_Logo_H300.png"
+                            alt="Trappy Blog">
+                    </a>
+
+                    <a target="_blank" href="https://www.cdc-habitat.fr/">
+                        <img src="assets/images/partenaires/1280px-CDC-habitat.png"
+                            alt="CDC Habitat">
+                    </a>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <!--    *lien vers les politiques de confidentialité et mentions legales
                 *remettre un lien vers les différentes pages-->
-                <a href="mentions-legales.html">
-                    Mentions légales
-                </a>
+            <a href="mentions-legales.html">
+                Mentions légales
+            </a>
 
-                || Réalisé par les apprenants du simulateur au POP Café à l’Étoile d’or.
-    </footer>
+            || Réalisé par les apprenants du simulateur au POP Café à l’Étoile
+            d’or.
+        </footer>
 
-    <!-- intégration du javascript de bootstrap depuis https -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
-    <!-- Intégration du javascript de bootstrap en local -->
-    <script src="lib/leaflet/leaflet.js"></script>
-    <script src="lib/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/submenu.js"></script>
-    <script src="assets/js/openstreetmap.js"></script>
+        <!-- intégration du javascript de bootstrap depuis https -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+        <!-- Intégration du javascript de bootstrap en local -->
+        <script src="lib/leaflet/leaflet.js"></script>
+        <script src="lib/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/slider.js"></script>
+        <script src="assets/js/submenu.js"></script>
+        <script src="assets/js/openstreetmap.js"></script>
 
-</body>
+    </body>
 
 </html>

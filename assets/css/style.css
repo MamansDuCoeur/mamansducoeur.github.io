@@ -390,6 +390,10 @@ nav img {
     padding: 0 1rem; /* top/bottom left/right */
 }
 
+.media-articles {
+    margin-top: 2rem;
+}
+
 .article-item {
     padding: 0.5vh 0;
 }
@@ -397,6 +401,7 @@ nav img {
 .media-articles_content {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 3rem;
     margin-bottom: 1rem;
 }
@@ -406,30 +411,24 @@ nav img {
 }
 
 .media-articles ul {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-between;
 }
 
-.media-articles ul li {
+.article-item {
     width: 30%;
-    height: 7rem;
-    overflow: hidden;
 }
 
-.media-articles ul li img {
-    max-width: 100%;
+.article-item div {
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
 }
 
-.media-articles ul li div {
-    position: relative;
-}
-
-/* pour positionner la balise p dans son parent, on positionne le parent en relative d'abord */
 .media-articles ul li p {
-    position: absolute;
-    top: 0;
     color: white;
     text-shadow: 1px 1px black;
     padding: 0.5rem;
@@ -437,10 +436,8 @@ nav img {
     height: 100%;
 }
 
-
-
 .article-logo {
-    width: 40%;
+    width: 30%;
 }
 
 .article-logo>img {
@@ -458,12 +455,30 @@ nav img {
 GESTION DU RESPONSIVE
 
 *=======================================*/
-/** On va ajouter des règle css pour les écran faisant moin de 500px de large*/
-/* Si l'écran mesure au maximum 576px alors  : */
-@media (max-width: 576px) {
+/** On va ajouter des règles css pour les écran faisant moins de 900px de large*/
+@media (max-width: 1000px) {
+    .actions-list {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
 
-    /** notre action prend 752% de la largeur et donc s'empile sur les autres**/
+    #actions {
+        padding-bottom: 1rem;
+    }
 
+    .action {
+        width: 100%;
+    }
+
+    .article-item {
+        width: 45%;
+    }
+
+}
+
+
+/* Si l'écran mesure au maximum 750px alors  : */
+@media (max-width: 750px) {
 
     .masque {
         min-width: 75vw;
@@ -483,21 +498,25 @@ GESTION DU RESPONSIVE
         margin-bottom: 4vh;
     }
 
+    .action-youtube {
+        padding-bottom: 1rem;
+    }
+
+    .media-articles ul {
+        width: 100%;
+    }
+
     .article-logo {
-        width: 75vw;
-        margin: 2vh auto;
+        width: 100%;
     }
 
-    .articles {
-        margin: 2vh auto;
-    }
-
-    .actions-list {
+    .media-articles_content {
         flex-direction: column;
     }
 
-    .action {
-        width: 75vw; /* problème !*/
+    .article-item {
+        width: 100%;
+        height: auto;
     }
 
 }

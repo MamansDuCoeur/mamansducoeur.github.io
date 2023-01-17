@@ -285,7 +285,11 @@ nav img {
     padding-left: 1.2rem;
 }
 
-
+#burger {
+    width: 3rem;
+    height: 3rem;
+    display: none;
+}
 
 
 /* ============================ */
@@ -476,6 +480,27 @@ GESTION DU RESPONSIVE
 
 }
 
+/*Menu burger*/
+@media (max-width: 992px) {
+
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-socials {
+        display:none;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    #burger {
+        display: block;
+    }
+
+}
 
 /* Si l'écran mesure au maximum 768px alors  : */
 @media (max-width: 768px) {

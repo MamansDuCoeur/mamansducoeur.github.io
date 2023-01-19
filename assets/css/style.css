@@ -26,7 +26,7 @@ h6 {
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 a {
@@ -52,7 +52,7 @@ body {
 
 .segment {
     min-height: 100vh;
-    padding: 20vh 4rem 0 4rem;
+    padding: 20vh 4rem;
     box-sizing: border-box;
 }
 
@@ -103,6 +103,10 @@ form {
 
 .hide {
     display: none;
+}
+
+.parent {
+    position: relative;
 }
 
 .button {
@@ -167,6 +171,9 @@ form {
     margin: 0 10%;
 }
 
+#presentation {
+    display: block;
+}
 
 
 #home .social-links-container {
@@ -208,6 +215,7 @@ form {
     justify-content: center;
     gap: 0.8rem;
     padding-bottom: 1.3rem;
+    margin-top: 2rem;
 }
 
 #home .slider-buttons i {
@@ -215,17 +223,10 @@ form {
 }
 
 #home .submenu {
-    border-bottom-left-radius: 1.5em;
-    border-bottom-right-radius: 1.5em;
-    border-top-right-radius: 1.5em;
-    border-top-left-radius: 1.5em;
-
+    border-radius: 5px;
     position: absolute;
-    background-color: rgba(0, 0, 0, .5);
-    margin: 0 0 0 14vw;
-    width: 11vw;
-    padding: .7vh 0;
-
+    background-color: rgba(0, 0, 0, .95);
+    width: 11rem;
 }
 
 
@@ -236,10 +237,10 @@ form {
     color: white;
     transition: .2s ease-out;
     padding: 7px 21px;
+    border-radius: 5px;
 }
 
 #home .submenu a:hover {
-    border-radius: 1em;
     color: #6C0505;
     background-color: #FFDB5A;
     text-decoration: none;
@@ -454,6 +455,12 @@ nav img {
     height: 40vh;
 }
 
+#haWidget {
+    width:100%;
+    height:80rem;
+    border:none;
+}
+
 /**=====================================================
 
 GESTION DU RESPONSIVE
@@ -464,10 +471,12 @@ GESTION DU RESPONSIVE
     .actions-list {
         flex-direction: column;
         row-gap: 1rem;
+        max-width: 30rem;
+        margin: auto;
     }
 
     #actions {
-        padding-bottom: 1rem;
+        padding-bottom: 20vh;
     }
 
     .action {
@@ -478,10 +487,10 @@ GESTION DU RESPONSIVE
         width: 45%;
     }
 
-}
-
-/*Menu burger*/
-@media (max-width: 992px) {
+    #home .buttons-container {
+        margin: 0 auto;
+        max-width: 30rem;
+    }
 
     .menu {
         display: none;
@@ -518,6 +527,9 @@ GESTION DU RESPONSIVE
         width: 3rem;
     }
 
+    .col-12 + .col-12 {
+        margin-top: 4rem;
+    }
 }
 
 /* Si l'écran mesure au maximum 768px alors  : */
@@ -580,8 +592,8 @@ GESTION DU RESPONSIVE
 *=====================================================*/
 
 #openstreetmap {
-    width: 40vw;
-    height: 40vh;
+    width: 100%;
+    height: 20rem;
     margin: auto auto;
     z-index: 1;
 }
@@ -606,7 +618,7 @@ GESTION DU RESPONSIVE
 
 .richtext {
     max-width: 50rem;
-    margin: 0 auto 20vh auto;
+    margin: 0 auto;
 }
 
 .richtext p, .richtext ul {

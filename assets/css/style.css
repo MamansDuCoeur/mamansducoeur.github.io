@@ -617,3 +617,52 @@ GESTION DU RESPONSIVE
     list-style-type: disc;
     margin-left: 1.2rem;
 }
+
+.don {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .25);
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 50rem;
+    width: 96%;
+    margin: auto;
+}
+
+.don p:first-child {
+    margin-bottom: 1rem;
+}
+
+.don em {
+    font-size: 0.8em;
+    display: block;
+    max-width: 27rem;
+    margin: auto;
+}
+
+.big-btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: #BB0726;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #BB0726;
+}
+
+.big-btn:hover {
+    color: white;
+    background-color: #BB0726;
+    text-decoration: none;
+}
+
+
+@media (max-width: 650px) {
+    .don {
+        font-size: 1em;
+        padding: 1.5rem;
+    }
+}

@@ -353,8 +353,22 @@
 
             <section id="dons" class="yellow-bg segment">
                 <h2>Faire un don</h2>
-                <iframe id="haWidget" allowtransparency="true" scrolling="yes"
-                    src="https://www.helloasso.com/associations/amc-les-mamans-du-coeur/formulaires/1/widget"></iframe>
+                <!-- Version intégrée à la page sans solution parfaite pour les scrollbar -->
+                <!-- <iframe id="haWidget" allowtransparency="true" scrolling="yes"
+                    src="https://www.helloasso.com/associations/amc-les-mamans-du-coeur/formulaires/1/widget"></iframe> -->
+                <div class="don">
+                    <p><strong>Nous avons besoin de votre aide !</strong></p>
+                    <p>Pour financer :</p>
+                    <ul>
+                        <li>Le maintien et la vie de l'association et de ses infrastructures</li>
+                        <li>La mise en place d'un fond d'urgence pour des nuitées et des repas chauds</li>
+                        <li>Des sorties et projets culturels, citoyens et écologiques pour les jeunes du quartier</li>
+                    </ul>
+                    <a class="big-btn" target="_blank" href="https://www.helloasso.com/associations/amc-les-mamans-du-coeur/formulaires/1/">
+                        Faire un don
+                    </a>
+                    <p><em>Pour réaliser votre don, nous vons invitons à cliquer sur le lien ci-dessus qui vous dirigera sur notre profil Helloasso.</em></p>
+                </div>
             </section>
             <section id="contact" class="segment">
                 <h2>Contact</h2>
@@ -764,6 +778,7 @@
         <script src="assets/js/openstreetmap.js"></script>
         <script src="assets/js/menumobile.js"></script>
         <!-- <script src="assets/js/burger.js"></script> -->
+        <script> var script = document.createElement('script'); script.dataset.cache = true; script.dataset.websiteId = '09e5f8f0-e9a9-45ea-9d63-8f0d8d30ef1d'; script.src='https://s.abla.io/abla.js'; document.getElementsByTagName('head')[0].appendChild(script);</script>
     </body>
 
 </html>

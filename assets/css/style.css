@@ -495,11 +495,20 @@ GESTION DU RESPONSIVE
 
     nav{
         justify-content: center;
+        top: -6rem;
+        height: 6rem;
+        transition: top .3s;
+    }
+
+    nav.on {
+        top: 0;
     }
 
     #burger {
         display: block;
     }
+
+
 
 }
 

@@ -8,6 +8,6 @@
   - Cacher le menu sur mobile
   - Afficher le menu sur mobile quand on scrolle vers le haut
   - Réorganiser la barre de menu sur mobile pour avoir le logo, le facebook, le tel, un lien retour en haut pour afficher le menu
-5. [ ] Finaliser et revoir le responsive
+5. [x] Finaliser et revoir le responsive
 6. [ ] Regarder ce qui est faisable pour l'iframe helloasso
-7. [ ] Faire une dernière "harmonisation" graphique, mettre des marges plus régulières, peaufiner les styles
+7. [x] Faire une dernière "harmonisation" graphique, mettre des marges plus régulières, peaufiner les styles

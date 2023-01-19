@@ -571,3 +571,21 @@ GESTION DU RESPONSIVE
     margin-bottom: 0;
     margin-top: 2rem;
 }
+
+/*====================================================
+*   Qui sommes-nous
+*=====================================================*/
+
+.richtext {
+    max-width: 50rem;
+    margin: 0 auto 20vh auto;
+}
+
+.richtext p, .richtext ul {
+    margin: 1rem 0;
+}
+
+.richtext ul {
+    list-style-type: disc;
+    margin-left: 1.2rem;
+}

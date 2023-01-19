@@ -47,9 +47,10 @@ ul {
 
 body {
     font-family: 'HindSiliguri', Arial;
+    background-color: #FCFAF5;
 }
 
-section {
+.segment {
     min-height: 100vh;
     padding: 20vh 4rem 0 4rem;
     box-sizing: border-box;
@@ -555,4 +556,18 @@ GESTION DU RESPONSIVE
     height: 40vh;
     margin: auto auto;
     z-index: 1;
+}
+
+/*====================================================
+*   Mentions légales
+*=====================================================*/
+
+.legals {
+    text-align: center;
+    padding: 2rem;
+}
+
+.legals h2 {    
+    margin-bottom: 0;
+    margin-top: 2rem;
 }

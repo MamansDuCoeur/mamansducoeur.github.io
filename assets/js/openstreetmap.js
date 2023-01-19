@@ -30,15 +30,15 @@ var marker_h1 = L.marker(hotel_1);
 var marker_h2 =L.marker(hotel_2);
 var marker_h3 =L.marker(hotel_3);
 
+marker_h3.bindPopup(openInfo("Hôtel Première Classe Saint Quentin En Yvelines", 
+"65BIS Av. Georges Politzer, 78190 Trappes",
+"+33 892 70 70 96")).openPopup();
+marker_h2.bindPopup(openInfo("ENZO HOTELS TRAPPES By KYRIAD DIRECT", 
+"Rue Eugène Hénaff, 78190 Trappes",
+"+33 1 30 50 82 42")).openPopup();
 marker_h1.bindPopup(openInfo("Hotel F1 Trappes", 
-"Rue Gaston Monmousseau 78195 TRAPPESFrance",
-"+33-891-70-54-18")).openPopup();
-marker_h2.bindPopup(openInfo("Hotel F1 Trappes", 
-"Rue Gaston Monmousseau 78195 TRAPPESFrance",
-"+33-891-70-54-18")).openPopup();
-marker_h3.bindPopup(openInfo("Hotel F1 Trappes", 
-"Rue Gaston Monmousseau 78195 TRAPPESFrance",
-"+33-891-70-54-18")).openPopup();
+"Rue Gaston Monmousseau, 78195 Trappes",
+"+33 891 70 54 18")).openPopup();
 
 marker_h1.addTo(map);
 marker_h2.addTo(map);

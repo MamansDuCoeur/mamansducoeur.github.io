@@ -84,11 +84,11 @@ a:hover {
     text-decoration: underline;
 }
 
-/*Essai pour supprimer le surlignage des icônes de Font Awesome*/
+/*Essai pour supprimer le surlignage des icônes de Font Awesome
 a i[class^="fa-"]:hover,
 a i[class*=" fa-"]:hover {
     text-decoration: none;
-}
+}*/
 
 form {
     display: flex;
@@ -183,7 +183,7 @@ form {
     margin: 1.2rem 20% 3rem 20%;
     gap: 1.2rem;
 }
-
+/*Suppression du surlignage des icônes de Font Awesome*/
 #home .social-links-container a i:before {
     text-decoration: none;
     display: inline-block;
@@ -315,7 +315,17 @@ nav img {
     align-items: center;
     gap: 4.3rem;
 }
-
+#angles-up {
+    display: flex ;
+    justify-content: right;
+    font-size: 3rem;
+    color: black;
+    padding-right: none;
+}
+#angles-up i:before {
+    text-decoration: none;
+    display: inline-block;
+}
 
 /** ========================================
 *       La section Nos actions
@@ -531,6 +541,8 @@ GESTION DU RESPONSIVE
 
     #burger {
         display: block;
+        font-size: 3rem;
+
     }
     
     nav img {

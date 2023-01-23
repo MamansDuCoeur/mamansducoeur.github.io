@@ -134,7 +134,14 @@ form {
     border-color: #FFDB5A;
     text-decoration: none;
 }
+/* ========================= */
+/* === Qui sommes nous ? === */
+/* ========================= */
 
+.flotte {
+    float:right;
+    padding-left: 2em;
+    }
 /* ==================== */
 /* === Home section === */
 /* ==================== */

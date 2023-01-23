@@ -37,9 +37,11 @@ function hideSubMenu(){
 // Je récupère l'éléménet html qui correspond
 let presentationElement = document.querySelector("#presentation");
 let submenu = document.querySelector("#submenu");
+let menu = document.querySelector("header .buttons-container");
 
 presentationElement.addEventListener("click", toggleSubMenu);
 submenu.addEventListener("mouseleave", hideSubMenu);
+menu.addEventListener("mouseleave", hideSubMenu);
 submenu.addEventListener("click", hideSubMenu);
 
 // presentationElement.addEventListener("mouseover", toggleArrow);

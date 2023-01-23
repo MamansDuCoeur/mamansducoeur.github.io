@@ -11,12 +11,12 @@ function toggleSubMenu(){
     subMenuElem.classList.toggle("hide");
 }
 
-function hideeSubMenu(){
+function hideSubMenu(){
     // on récupère l'élément qui a l'id submenu dans le document HTML
     let subMenuElem = document.querySelector("#submenu");
 
-    // On demande à enlever la classe hide
-    subMenuElem.classList.remove("hide");
+    // On demande à ajouter la classe hide
+    subMenuElem.classList.add("hide");
 }
 
 // function toggleArrow(){
@@ -39,7 +39,8 @@ let presentationElement = document.querySelector("#presentation");
 let submenu = document.querySelector("#submenu");
 
 presentationElement.addEventListener("click", toggleSubMenu);
-submenu.addEventListener("mouseout", hideeSubMenu);
+submenu.addEventListener("mouseleave", hideSubMenu);
+submenu.addEventListener("click", hideSubMenu);
 
 // presentationElement.addEventListener("mouseover", toggleArrow);
 // presentationElement.addEventListener("mouseout", toggleArrow)

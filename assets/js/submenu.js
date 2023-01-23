@@ -33,7 +33,7 @@ function hideeSubMenu(){
 
 
 
-// On detecter l'evenenment qui dit l'utilisateur clique sur le bouton "presentation"
+// On detecte l'evenenment qui dit l'utilisateur clique sur le bouton "presentation"
 // Je récupère l'éléménet html qui correspond
 let presentationElement = document.querySelector("#presentation");
 let submenu = document.querySelector("#submenu");

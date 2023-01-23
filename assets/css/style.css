@@ -141,6 +141,7 @@ form {
 .flotte {
     float:right;
     padding-left: 2em;
+    padding-bottom: 2em;
     }
 /* ==================== */
 /* === Home section === */
@@ -624,7 +625,7 @@ GESTION DU RESPONSIVE
 *=====================================================*/
 
 .richtext {
-    max-width: 50rem;
+    max-width: 60rem;
     margin: 0 auto;
 }
 
